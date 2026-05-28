@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BIM - Gallery</title>
+    <link href="../Includes/styles.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="../Images/logo.png">
+    <?php include '../Includes/head_links.php' ?>
+</head>
+
+<body>
+    <?php include '../Includes/navbar1.php'; ?>
+    <!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery-BIM</title>
+    <link rel="icon" type="image/x-icon" href="../Images/logo.jpg">
+    <?php include '../Includes/head_links.php' ?>
+    <script src="../Includes/script.js"></script>
+    <link rel="stylesheet" href="../Includes/index.css" />
+    <style>
+        .gallery-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        /* Modal Image Styling */
+        .modal-content img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container py-4">
+        <h3 class="text-center mb-4 text-danger" data-aos="fade-up" data-aos-delay="200">CSEP – Communication Skills Enhancement Program </h3>
+
+         <p class="text-justify" style="text-align: justify-all;"> The Communication Skills Enhancement Program (CSEP) is a dedicated institutional initiative designed to strengthen students’ communication, presentation, and interpersonal skills. The program provides a structured platform where students actively participate in activities such as group discussions, presentations, public speaking sessions, and real-world communication exercises.
+CSEP focuses on bridging the gap between academic learning and industry expectations by equipping students with the confidence and clarity required to express their ideas effectively. Through continuous practice, expert guidance, and performance feedback, students develop the ability to articulate thoughts, engage in professional conversations, and adapt to diverse workplace scenarios.
+By nurturing these essential skills, CSEP empowers students to confidently prove their potential and excel in the competitive corporate and market environment
+
+</p>
+        <!--<div class="row g-4">
+            <script>
+                let galleryHtml = '';
+                for (let i = 1; i <= 4; i++) {
+                    galleryHtml += `
+                        <div class="col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-delay="300">
+                            <img class="gallery-img" src="../Images/cgc/${i}.jpeg" alt="Gallery Image ${i}" onclick="openModal(this.src)">
+                        </div>
+                    `;
+                }
+                document.write(galleryHtml);
+            </script>
+        </div>--->
+    </div>
+
+    <!-- Modal for Full Image View -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <img id="modalImage" src="" alt="Full Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal(imageSrc) {
+            document.getElementById("modalImage").src = imageSrc;
+            var imageModal = new bootstrap.Modal(document.getElementById("imageModal"));
+            imageModal.show();
+        }
+    </script>
+</body>
+
+</html>
+
+    <?php include '../Includes/footer.php'; ?>
+    <?php include '../Includes/body_links.php' ?>
+    <script src="../Includes/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+<h4 class="fw-bold pb-2" data-aos="fade-up" data-aos-delay="300">Program Educational Objectives (PEOs)</h4>
+<ul>
+    <li data-aos="fade-up" data-aos-delay="400"><b>PEO 01:</b> Graduates will excel in the computing profession by applying their knowledge and skills to solve real-world problems, design and develop software systems, and provide innovative solutions using emerging technologies.</li>
+    <li data-aos="fade-up" data-aos-delay="500"><b>PEO 02:</b> Graduates will engage in lifelong learning, adapt to evolving technologies, and pursue advanced studies, professional certifications, or training to keep pace with the dynamic nature of the IT industry.</li>
+    <li data-aos="fade-up" data-aos-delay="600"><b>PEO 03:</b> Graduates will demonstrate leadership and effectively work as team members or leaders in diverse and multidisciplinary environments, making informed decisions to contribute to the success of organizations.</li>
+    <li data-aos="fade-up" data-aos-delay="700"><b>PEO 04:</b> Graduates will exhibit professional ethics, integrity, and social responsibility in their computing practices, contributing to society while adhering to legal and ethical guidelines in the IT sector.</li>
+    <li data-aos="fade-up" data-aos-delay="800"><b>PEO 05:</b> Graduates will recognize and seize opportunities for innovation and entrepreneurship, applying their technical skills to create new solutions, start ventures, or contribute to the growth and competitiveness of the IT industry.</li>
+</ul>

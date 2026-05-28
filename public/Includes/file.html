@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Navbar Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    #header {
+      background-color: #333;
+      padding: 10px 20px;
+      color: white;
+    }
+
+    .navbar {
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .mobile-nav-toggle {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+      color: white;
+    }
+
+    /* Mobile styles */
+    @media (max-width: 768px) {
+      .navbar {
+        display: none;
+        flex-direction: column;
+        background-color: #444;
+        padding: 10px;
+      }
+
+      .navbar.navbar-mobile {
+        display: flex;
+      }
+
+      .mobile-nav-toggle {
+        display: inline-block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header id="header">
+    <div class="container">
+      <i class="bi bi-list mobile-nav-toggle"></i>
+      <nav id="navbar" class="navbar">
+        <a href="#home" class="scrollto">Home</a>
+        <a href="#about" class="scrollto">About</a>
+        <a href="#services" class="scrollto">Services</a>
+        <a href="#contact" class="scrollto">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <script>
+    (function () {
+      "use strict";
+
+      const select = (el, all = false) => {
+        el = el.trim();
+        if (all) {
+          return [...document.querySelectorAll(el)];
+        } else {
+          return document.querySelector(el);
+        }
+      };
+
+      const on = (type, el, listener, all = false) => {
+        let selectEl = select(el, all);
+        if (selectEl) {
+          if (all) {
+            selectEl.forEach((e) => e.addEventListener(type, listener));
+          } else {
+            selectEl.addEventListener(type, listener);
+          }
+        }
+      };
+
+      on("click", ".mobile-nav-toggle", function (e) {
+        select("#navbar").classList.toggle("navbar-mobile");
+        this.classList.toggle("bi-list");
+        this.classList.toggle("bi-x");
+      });
+    })();
+  </script>
+
+</body>
+</html>

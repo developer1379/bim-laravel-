@@ -1,0 +1,153 @@
+﻿@media (max-width:1000px) {
+    .about_img {
+        max-width: 200px;
+        display  : none;
+    }
+}
+
+@media (max-width: 731px) {
+    .logo {
+        max-width: 150px;
+        height   : 90px;
+    }
+
+    .mobile-none {
+        display: none;
+    }
+
+    .aktu_logo {
+        display: none;
+    }
+
+    .about_img {
+        max-width: 200px;
+        display  : none;
+    }
+
+    .coming-soon {
+        text-align: center;
+        padding   : 82px 14px 82px 14px;
+
+    }
+
+    .coming-soon img {
+        height: 60px;
+
+    }
+
+    .navbar-expand-lg {
+        position        : absolute;
+        z-index         : 99;
+        background-color: #ffffff;
+        padding         : 10px;
+        top             : 55px;
+        right           : 0px;
+    }
+
+    .navbar-light .navbar-toggler {
+        margin-left: 27px;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: #fff;
+    }
+
+    .menu-area ul {
+        max-height  : 500px;
+        overflow    : auto;
+        padding-top : 15px;
+        padding-left: 27px;
+    }
+
+    .eng {
+        padding-top: 20px;
+    }
+
+    .eng h2 {
+        font-size  : 20px;
+        font-weight: 700;
+    }
+
+    .eng h5 {
+        font-size  : 16px;
+        font-weight: 700;
+    }
+
+    .eng p {
+        font-size  : 12px;
+        font-weight: 700;
+    }
+
+    .hom {
+        display: none;
+    }
+
+
+
+    .inn-date {
+        padding     : 14px;
+        margin-left : 0;
+        margin-right: 0;
+    }
+
+    .padd {
+        padding: 10px;
+    }
+
+    .menu {
+        width: 300px;
+    }
+
+    .place-img img {
+        height       : 145px;
+        width        : 150px;
+        padding      : 10px;
+        border-radius: 98px;
+    }
+
+    .single-widget {
+        margin : 25px 0;
+        padding: 0px;
+    }
+
+    .img-content {
+        width: 100%;
+    }
+
+    .counter {
+        text-align: center;
+        margin-top: 0px;
+        float     : none;
+
+    }
+
+
+}
+
+@media (min-width:900px) and (max-width: 1165px) {
+    .marg {
+        margin-right: 4px;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+
+
+}
+
+@media all and (min-width: 992px) {
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    .menu li:hover {
+        background-color: #ffffff;
+        color           : #892e22;
+    }
+
+
+
+}

@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+  background: #eee;
+}
+/* Navbar Ends */
+/* carousel Start */
+
+/* Carousel End */
+/* BIT Data Start */
+.bit-data {
+  background-color: #212529;
+  color: white;
+}
+
+
+/* Social Engagement Start */
+
+
+/* Social Engagement Ends */
+
+
+
+/* Academic Start */
+#dashboard-menu h4,
+  #dashboard-menu a.nav-link,
+  #dashboard-menu ul,
+  #dashboard-menu li {
+      text-align: left !important;
+      justify-content: flex-start !important;
+      align-items: flex-start !important;
+      display: block;
+  }
+
+  #dashboard-menu .nav-link {
+      display: block;
+      width: 100%;
+      white-space: normal !important;
+      word-break: break-word;
+  }
+
+  #dashboard-menu hr {
+      border-color: white;
+      margin: 5px 0;
+      width: 100%;
+      display: block;
+  }
+/* Academic Ends */
+
+/* Footer Start */
+.footer-links {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links:hover {
+  text-decoration: underline;
+}
+
+
+/* Footer Ends */
+
+
+
+
+
+
+
+/* Swiper Js Start */
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #f8f9fa;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global text color reset — ensures hero white text doesn't bleed into content sections */
+.container, .container-fluid, section {
+  color: #222;
+}
+
+/* Keep white text only inside hero and dark elements */
+.hero-carousel-wrapper,
+.hero-carousel-wrapper *:not(.hero-content-box) {
+  /* colors controlled individually */
+}
+
+.hero-content-box, .hero-content-box p,
+.hero-content-box h1 {
+  color: #fff;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #222;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Swiper Js Ends */

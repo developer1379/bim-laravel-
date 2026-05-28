@@ -1,0 +1,1 @@
+<h3 class="" data-aos="fade-up" data-aos-delay="300">Departmental Society</h3>
