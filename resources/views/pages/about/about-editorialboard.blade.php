@@ -1,11 +1,12 @@
-<?php echo view('pages.uncategorized.header'); ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editorial Board - BIJT</title>
-    <style>
+@extends('layouts.site', [
+    'headPartial' => 'pages.uncategorized.header',
+    'headerPartial' => 'pages.uncategorized.header',
+    'footerPartial' => 'pages.uncategorized.header',
+    'scriptsPartial' => 'pages.uncategorized.header',
+])
+
+@push('head')
+<style>
         .about-header {
         background-color: #5797cb;
         color: white;
@@ -91,8 +92,9 @@
             }
         }
     </style>
-</head>
-<body>
+@endpush
+
+@section('content')
 <section class="about-header text-center">
     <div class="container">
         <h1 class="display-4 fw-bold">Editorial Board</h1>
@@ -155,6 +157,4 @@
             
         </div>
     </div>
-</body>
-</html>
-@include('includes.footer')
+@endsection

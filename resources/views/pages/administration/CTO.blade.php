@@ -1,18 +1,12 @@
-<!doctype html>
-<html lang="en">
+@extends('layouts.site', [
+    'headPartial' => 'includes.head_links',
+    'headerPartial' => 'includes.navbar',
+    'footerPartial' => 'includes.footer',
+    'scriptsPartial' => 'includes.body_links',
+])
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BIM - Message From CTO</title>
-    <link rel="icon" type="image/x-icon" href="{{ asset('Images/logo.png') }}">
-    <link href="{{ asset('Includes/styles.css') }}" rel="stylesheet" />
-    @include('includes.head_links')
-</head>
-
-<body>
-    @include('includes.navbar')
-    <section class="message">
+@section('content')
+<section class="message">
         <div class="container">
             <div class="card shadow mt-5 mb-5">
                 <div class="row">
@@ -65,11 +59,4 @@
             
         </div>
     </section>
-
-    @include('includes.footer')
-    
-    @include('includes.body_links')
-    
-</body>
-
-</html>
+@endsection

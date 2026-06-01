@@ -1,0 +1,16 @@
+
+/* Seamless CSS Marquee */
+.css-marquee {
+    position: relative;
+    overflow: hidden;
+}
+.css-marquee .notice-list {
+    animation: scroll-up 20s linear infinite;
+}
+.css-marquee:hover .notice-list {
+    animation-play-state: paused;
+}
+@keyframes scroll-up {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-50%); }
+}

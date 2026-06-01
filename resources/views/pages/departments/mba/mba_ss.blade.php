@@ -1,16 +1,12 @@
-<!doctype html>
-<html lang="en">
+@extends('layouts.site', [
+    'headPartial' => 'includes.head_links',
+    'headerPartial' => 'includes.inner_mba',
+    'footerPartial' => 'includes.footer',
+    'scriptsPartial' => 'includes.body_links',
+])
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MBA Student Speaks - BIM</title>
-    <link href="{{ asset('../../../Includes/styles.css') }}" rel="stylesheet" />
-    
-    <link rel="icon" type="image/x-icon" href="{{ asset('../../../Images/logo.png') }}">
-    
-    @include('includes.head_links')
-    <style>
+@push('head')
+<style>
         /* Style for the PDF container with background color */
         .pdf-container {
             background-color: #ffffff; /* Blue background */
@@ -36,12 +32,10 @@
             }
         }
     </style>
-</head>
+@endpush
 
-<body>
-    @include('includes.inner_mba')
-    <!-- Carousel Start -->
-    <br>
+@section('content')
+<br>
    <!--<div class="container">
               <div class="row">
 
@@ -131,10 +125,4 @@
   
          </video>
     </div>-->
-
-
-    @include('includes.footer')
-    @include('includes.body_links')
-</body>
-
-</html>
+@endsection

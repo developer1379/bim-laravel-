@@ -1,14 +1,12 @@
-<!doctype html>
-<html lang="en">
+@extends('layouts.site', [
+    'headPartial' => 'includes.head_links1',
+    'headerPartial' => 'includes.navbar1',
+    'footerPartial' => 'includes.footer1',
+    'scriptsPartial' => 'includes.body_links1',
+])
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home - BIM</title>
-    <link href="{{ asset('Includes/styles.css') }}" rel="stylesheet" />
-    <link rel="icon" type="image/x-icon" href="{{ asset('Images/logo.png') }}">
-    @include('includes.head_links1')
-    <style>
+@push('head')
+<style>
 
          /* Popup Start */
          #popup {
@@ -72,10 +70,61 @@
             }
         }
     </style>
-</head>
+<style>
+        body {
+            background-color: #ffffff;
+        }
 
-<body>
-     <!-- Popup structure -->
+        .gallery-container {
+            max-width: 1100px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .gallery-title {
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            gap: 10px;
+        }
+
+        .gallery .img-large {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        .show-more-btn {
+            background-color: #d21404;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+
+        .show-more-btn:hover {
+            background-color: darkred;
+        }
+    </style>
+@endpush
+
+@section('content')
+<!-- Popup structure -->
      <!--<div id="popup">
         <span id="popupClose">&times;</span>
         <img src="{{ asset('Images/bim_admission1.jpeg') }}" alt="Popup Image">
@@ -92,12 +141,12 @@
             document.getElementById('popup').style.display = 'none';
         };
     </script>-->
-    @include('includes.navbar1')
+    
     <div class="container-fluid px-3">
         <div class="row">
-           <!-- Carousel Start -->
+           
     <div class="carousel-wrapper" style="position: relative; height: 100vh; width: 100vw; overflow: hidden;">
-        <!-- Carousel Start -->
+        
         <div id="carouselExampleControls" class="carousel slide h-100" data-bs-ride="carousel" data-bs-interval="3000">
             <div class="carousel-inner h-100">
                 <div class="carousel-item active h-100">
@@ -1328,8 +1377,8 @@
 
     <!--ends--
 
-    @include('includes.footer1')
-    @include('includes.body_links1')
+    
+    
 
     <!-- Initialize Swiper -->
     <script>
@@ -1386,7 +1435,4 @@
         });
     </script>
     <script src="{{ asset('Includes/script.js') }}"></script>
-
-</body>
-
-</html>
+@endsection

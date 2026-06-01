@@ -1,19 +1,12 @@
-<!doctype html>
-<html lang="en">
+@extends('layouts.site', [
+    'headPartial' => 'includes.head_links',
+    'headerPartial' => 'includes.navbar1',
+    'footerPartial' => 'includes.footer',
+    'scriptsPartial' => 'includes.body_links',
+])
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Placement Cell - BIM</title>
-    <link href="{{ asset('Includes/styles.css') }}" rel="stylesheet" />
-    @include('includes.head_links')
-    <link rel="icon" type="image/x-icon" href="{{ asset('Images/logo.png') }}">
-</head>
-
-<body>
-    @include('includes.navbar1')
-
-    <!-- Placement Section Start -->
+@section('content')
+<!-- Placement Section Start -->
     <div class="container placement-cell">
             <div class="row my-3 d-flex justify-content-center">
                 <h2 class="text-center">Placement Cell</h2>
@@ -51,9 +44,4 @@
             </div>
         </div>
     <!-- Placement Section Ends -->
-
-    @include('includes.footer')
-    @include('includes.body_links')
-</body>
-
-</html>
+@endsection

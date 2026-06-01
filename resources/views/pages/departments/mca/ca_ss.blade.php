@@ -1,15 +1,12 @@
-<!doctype html>
-<html lang="en">
+@extends('layouts.site', [
+    'headPartial' => 'includes.head_links',
+    'headerPartial' => 'includes.inner_bca',
+    'footerPartial' => 'includes.footer',
+    'scriptsPartial' => 'includes.body_links',
+])
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CA Video - BCA & MCA</title>
-    <link href="{{ asset('../../../Includes/styles.css') }}" rel="stylesheet" />
-    
-    <link rel="icon" type="image/x-icon" href="{{ asset('../../../Images/logo.png') }}">
-    @include('includes.head_links')
-    <style>
+@push('head')
+<style>
         /* Style for the PDF container with background color */
         .pdf-container {
             background-color: #ffffff; /* Blue background */
@@ -35,24 +32,14 @@
             }
         }
     </style>
-</head>
+@endpush
 
-<body>
-    @include('includes.inner_bca')
-    <!-- Carousel Start -->
-
-
-    <div class="pdf-container">
+@section('content')
+<div class="pdf-container">
         <video width="50%" controls>
             <source src="{{ asset('../../../Images/ca_video.mp4') }}" type="video/mp4">
             <source src="{{ asset('../../../Images/ca_video.ogg') }}" type="video/ogg">
   
          </video>
     </div>
-
-
-    @include('includes.footer')
-    @include('includes.body_links')
-</body>
-
-</html>
+@endsection

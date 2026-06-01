@@ -1,15 +1,12 @@
-<!doctype html>
-<html lang="en">
+@extends('layouts.site', [
+    'headPartial' => 'includes.head_links',
+    'headerPartial' => 'includes.inner_bca',
+    'footerPartial' => 'includes.footer',
+    'scriptsPartial' => 'includes.body_links',
+])
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CA Administrative Committee</title>
-    <link href="{{ asset('../../../Includes/styles.css') }}" rel="stylesheet" />
-    
-    <link rel="icon" type="image/x-icon" href="{{ asset('../../../Images/logo.png') }}">
-    @include('includes.head_links')
-    <style>
+@push('head')
+<style>
         /* Style for the PDF container with background color */
         .pdf-container {
             background-color: #ffffff; /* Blue background */
@@ -35,12 +32,10 @@
             }
         }
     </style>
-</head>
+@endpush
 
-<body>
-    @include('includes.inner_bca')
-    <!-- Carousel Start -->
-     <row> <h4 class="text-danger text-center"> CA Administrative Committee</h4></row>
+@section('content')
+<row> <h4 class="text-danger text-center"> CA Administrative Committee</h4></row>
 
     <div class="pdf-container">
     
@@ -115,10 +110,4 @@
 
         <!--<embed src="{{ asset('../../../PDF/admin-team.pdf#toolbar=0') }}" type="application/pdf" width="50%" height="900px" />-->
     </div>
-
-
-    @include('includes.footer')
-    @include('includes.body_links')
-</body>
-
-</html>
+@endsection

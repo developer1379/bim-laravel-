@@ -1,15 +1,12 @@
-<!doctype html>
-<html lang="en">
+@extends('layouts.site', [
+    'headPartial' => 'includes.head_links',
+    'headerPartial' => 'includes.navbar1',
+    'footerPartial' => 'includes.footer',
+    'scriptsPartial' => 'includes.body_links',
+])
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MOU - BIM</title>
-    <link href="{{ asset('Includes/styles.css') }}" rel="stylesheet" />
-    
-    <link rel="icon" type="image/x-icon" href="{{ asset('Images/logo.png') }}">
-    @include('includes.head_links')
-    <style>
+@push('head')
+<style>
         /* Style for the PDF container with background color */
         .pdf-container {
             background-color: #ffffff; /* Blue background */
@@ -42,12 +39,10 @@
     border-radius: 0px 0px;
 }
     </style>
-</head>
+@endpush
 
-<body>
-    @include('includes.navbar1')
-    <!-- Carousel Start -->
-      <div class="container">
+@section('content')
+<div class="container">
           
             <div class="row brdsdo">
                 
@@ -212,10 +207,4 @@ entry)</h5>
    <!-- <div class="pdf-container">
         <embed src="{{ asset('PDF/AdmissionProcess.pdf#toolbar=0') }}" type="application/pdf" width="50%" height="900px" />
     </div>-->
-
-
-    @include('includes.footer')
-    @include('includes.body_links')
-</body>
-
-</html>
+@endsection

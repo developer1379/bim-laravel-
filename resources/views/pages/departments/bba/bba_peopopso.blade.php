@@ -1,18 +1,12 @@
-<!doctype html>
-<html lang="en">
+@extends('layouts.site', [
+    'headPartial' => 'includes.head_links',
+    'headerPartial' => 'includes.inner_bba',
+    'footerPartial' => 'includes.footer',
+    'scriptsPartial' => 'includes.body_links',
+])
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BBA - PEO POS PSO</title>
-    <link href="{{ asset('../../../Includes/styles.css') }}" rel="stylesheet" />
-    @include('includes.head_links')
-    <link rel="icon" type="image/x-icon" href="{{ asset('../../../Images/logo.png') }}">
-</head>
-
-<body>
-    @include('includes.inner_bba')
-    <div class="container">
+@section('content')
+<div class="container">
         <div class="row">
            <!-- <h3 class="text-center my-3 text-danger" style="text-transform: uppercase;">Program Educational Objectives (PEOs):</h3>-->
             <div class="card shadow py-3 px-3 my-3">
@@ -54,8 +48,4 @@ PO5. To become a good citizen who is socially responsible, steeped in ethical va
             </div>
         </div>
     </div>
-    @include('includes.footer')
-    @include('includes.body_links')
-</body>
-
-</html>
+@endsection

@@ -1,18 +1,30 @@
+@extends('layouts.site', [
+    'headPartial' => 'includes.head_links',
+    'headerPartial' => 'includes.navbar1',
+    'footerPartial' => 'includes.footer',
+    'scriptsPartial' => 'includes.body_links',
+])
+
+@push('head')
+<style>
+        .gallery-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        /* Modal Image Styling */
+        .modal-content img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+@endpush
+
+@section('content')
 <!doctype html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BIM - Gallery</title>
-    <link href="{{ asset('Includes/styles.css') }}" rel="stylesheet" />
-    <link rel="icon" type="image/x-icon" href="{{ asset('Images/logo.png') }}">
-    @include('includes.head_links')
-</head>
-
-<body>
-    @include('includes.navbar1')
-    <!doctype html>
 <html lang="en">
 
 <head>
@@ -20,7 +32,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gallery-BIM</title>
     <link rel="icon" type="image/x-icon" href="{{ asset('Images/logo.jpg') }}">
-    @include('includes.head_links')
+    
     <script src="{{ asset('Includes/script.js') }}"></script>
     <link rel="stylesheet" href="{{ asset('Includes/index.css') }}" />
     <style>
@@ -110,13 +122,4 @@
             imageModal.show();
         }
     </script>
-</body>
-
-</html>
-
-    @include('includes.footer')
-    @include('includes.body_links')
-    <script src="{{ asset('Includes/script.js') }}"></script>
-</body>
-
-</html>
+@endsection

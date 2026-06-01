@@ -1,0 +1,29 @@
+
+/* Compact Admission Button in Sub-navbar */
+.modern-admission-btn {
+    display: inline-flex;
+    align-items: center;
+    color: #fca5a5 !important;
+    font-size: 0.75rem; /* Very small */
+    font-weight: 600;
+    padding: 1px 6px;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+    background: transparent;
+    border: 1px solid rgba(204, 22, 22, 0.4);
+    text-decoration: none;
+    line-height: 1.2;
+}
+.modern-admission-btn i {
+    margin-left: 3px;
+    font-size: 0.65rem;
+    transition: transform 0.2s ease;
+}
+.modern-admission-btn:hover {
+    background: #cc1616;
+    color: #ffffff !important;
+    border-color: #cc1616;
+}
+.modern-admission-btn:hover i {
+    transform: translateY(2px);
+}

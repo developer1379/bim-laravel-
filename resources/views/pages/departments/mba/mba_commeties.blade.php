@@ -1,15 +1,12 @@
-<!doctype html>
-<html lang="en">
+@extends('layouts.site', [
+    'headPartial' => 'includes.head_links',
+    'headerPartial' => 'includes.inner_mba',
+    'footerPartial' => 'includes.footer',
+    'scriptsPartial' => 'includes.body_links',
+])
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MBA  Committee</title>
-    <link href="{{ asset('../../../Includes/styles.css') }}" rel="stylesheet" />
-    
-    <link rel="icon" type="image/x-icon" href="{{ asset('../../../Images/logo.png') }}">
-    @include('includes.head_links')
-    <style>
+@push('head')
+<style>
         /* Style for the PDF container with background color */
         .pdf-container {
             background-color: #ffffff; /* Blue background */
@@ -35,12 +32,10 @@
             }
         }
     </style>
-</head>
+@endpush
 
-<body>
-    @include('includes.inner_mba')
-    <!-- Carousel Start -->
-     <div class="row"> <h4 class="text-danger text-center"> Department Society (MBA) Committee</h4>
+@section('content')
+<div class="row"> <h4 class="text-danger text-center"> Department Society (MBA) Committee</h4>
 
  <h5 class="text-danger text-center">(Even Sem. Jan. to Jun. 2026)</h5>
 
@@ -141,10 +136,4 @@ PRIYANSH GUPTA
 
       <!-- <embed src="{{ asset('../../../PDF/admin-team.pdf#toolbar=0') }}" type="application/pdf" width="50%" height="900px" />-->
     </div>
-
-
-    @include('includes.footer')
-    @include('includes.body_links')
-</body>
-
-</html>
+@endsection

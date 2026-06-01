@@ -1,21 +1,18 @@
-<!doctype html>
-<html lang="en">
+@extends('layouts.site', [
+    'headPartial' => 'includes.head_links',
+    'headerPartial' => 'includes.navbar',
+    'footerPartial' => 'includes.footer',
+    'scriptsPartial' => 'includes.body_links',
+])
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BIM - Courses</title>
-    <link rel="icon" type="image/x-icon" href="{{ asset('Images/logo.png') }}">
-    <link href="{{ asset('Includes/styles.css') }}" rel="stylesheet" />
-    @include('includes.head_links')
-    <style>
+@push('head')
+<style>
 
     </style>
-</head>
+@endpush
 
-<body>
-    @include('includes.navbar')
-    <main id="main">
+@section('content')
+<main id="main">
         <section id="about" class="about pt-3 ">
             <div class=" container p-0 ">
                 <div class="row mt-3 mb-5 shadow">
@@ -53,10 +50,4 @@
             </div>
         </section>
     </main>
-
-    
-    @include('includes.footer')
-    @include('includes.body_links')
-</body>
-
-</html>
+@endsection

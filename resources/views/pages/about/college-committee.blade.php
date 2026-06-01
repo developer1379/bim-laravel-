@@ -1,18 +1,12 @@
-<!doctype html>
-<html lang="en">
+@extends('layouts.site', [
+    'headPartial' => 'includes.head_links',
+    'headerPartial' => 'includes.navbar',
+    'footerPartial' => 'includes.footer',
+    'scriptsPartial' => 'includes.body_links',
+])
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BIM - College Committee</title>
-    <link href="{{ asset('Includes/styles.css') }}" rel="stylesheet" />
-    <link rel="icon" type="image/x-icon" href="{{ asset('Images/logo.png') }}">
-    @include('includes.head_links')
-</head>
-
-<body>
-    @include('includes.navbar')
-    <section class="committee">
+@section('content')
+<section class="committee">
         <div class="container">
             <div class="row my-3 d-flex justify-content-center">
                 <h2 class="text-center" style="text-transform: uppercase;">College Committee</h2>
@@ -128,8 +122,4 @@
             
         </div>
     </section>
-    @include('includes.footer')
-    @include('includes.body_links')
-</body>
-
-</html>
+@endsection

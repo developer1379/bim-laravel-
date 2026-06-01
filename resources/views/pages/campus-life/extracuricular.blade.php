@@ -1,20 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.site', [
+    'headPartial' => 'includes.head_links',
+    'headerPartial' => 'pages.campus-life.extracuricular-sidebar',
+    'footerPartial' => 'pages.campus-life.extracuricular-sidebar',
+    'scriptsPartial' => 'pages.campus-life.extracuricular-sidebar',
+])
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>extracuricular</title>
-    <link rel="stylesheet" href="{{ asset('../../Includes/styles.css') }}">
-
-    @include('includes.head_links')
-    <link rel="icon" type="image/x-icon" href="{{ asset('../../Images/logo.png') }}">
-
-</head>
-
-<body>
-
-    <?php 
+@section('content')
+<?php 
     
     echo view('includes.navbar1'); 
     
@@ -83,10 +75,4 @@
         </div>
 
     </div>
-
-    @include('includes.footer')
-
-    @include('includes.body_links')
-</body>
-
-</html>
+@endsection

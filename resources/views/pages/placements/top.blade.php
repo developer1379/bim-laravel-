@@ -1,22 +1,13 @@
+@extends('layouts.site', [
+    'headPartial' => 'partials.site.head',
+    'headerPartial' => 'partials.site.header',
+    'footerPartial' => 'partials.site.footer',
+    'scriptsPartial' => 'partials.site.scripts',
+])
+
+@section('content')
 ﻿<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buddha Institute of Technology</title>
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
-    <link rel="stylesheet" href="https://www.>.com/w3css/4/w3.css">
-
-    <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
-    <link rel='shortcut icon' type='image/x-icon' href='{{ asset('images/logo.png') }}' />
-    <link rel="stylesheet" type="text/css" href="{{ asset('js/amazingslider-1.css') }}">
-
-</head>
-<body onload="document.getElementById('defaultOpen').click();">
     <header class="head">
         <!-- Start of news -->
         <div class="news">
@@ -214,3 +205,4 @@
             </div>
         </div>
     </header>
+@endsection

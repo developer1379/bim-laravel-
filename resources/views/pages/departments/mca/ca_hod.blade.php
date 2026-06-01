@@ -1,19 +1,11 @@
-<!doctype html>
-<html lang="en">
+@extends('layouts.site', [
+    'headPartial' => 'includes.head_links',
+    'headerPartial' => 'includes.inner_bca',
+    'footerPartial' => 'includes.footer',
+    'scriptsPartial' => 'includes.body_links',
+])
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CA HOD</title>
-    <link rel="icon" type="image/x-icon" href="{{ asset('../../../Images/logo.png') }}">
-    <link href="{{ asset('../../../Includes/styles.css') }}" rel="stylesheet" />
-    @include('includes.head_links')
-</head>
-
-<body>
-    @include('includes.inner_bca')
-
-
+@section('content')
 <!--about department-->
 
 
@@ -67,13 +59,4 @@ I wish you all success in your future endeavors.
             </div>
         </div>
     </section>
-
-
-
-    @include('includes.footer')
-    
-    @include('includes.body_links')
-    
-</body>
-
-</html>
+@endsection

@@ -1,52 +1,12 @@
-<?php
-// include('Admin/db.php'); // TODO: Fix DB Include;
-// Handle form submission
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars(trim($_POST["name"]));
-    $email = htmlspecialchars(trim($_POST["email"]));
-    $department = htmlspecialchars(trim($_POST["department"]));
-    $course = htmlspecialchars(trim($_POST["course"]));
-    $password = $_POST["password"];
-    $confirm_password = $_POST["confirm_password"];
+@extends('layouts.site', [
+    'headPartial' => 'includes.head_links',
+    'headerPartial' => 'includes.navbar',
+    'footerPartial' => 'includes.footer',
+    'scriptsPartial' => 'includes.body_links',
+])
 
-    if ($password !== $confirm_password) {
-        $message = "<div class='alert alert-danger'>❌ Passwords do not match!</div>";
-    } else {
-        $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-
-        $conn = new mysqli("localhost", "root", "", "college_portal");
-
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-        }
-
-        $sql = "INSERT INTO students (name, email, department, course, password) VALUES (?, ?, ?, ?, ?)";
-        $stmt = $conn->prepare($sql);
-        $stmt->bind_param("sssss", $name, $email, $department, $course, $hashed_password);
-
-        if ($stmt->execute()) {
-            $message = "<div class='alert alert-success'>✅ Registration successful!</div>";
-        } else {
-            $message = "<div class='alert alert-danger'>❌ Error: " . $conn->error . "</div>";
-        }
-
-        $stmt->close();
-        $conn->close();
-    }
-}
-?>
-
-<!DOCTYPE html>
-<html>
-
-<head>
-
-    <title>Student Registration</title>
-    <link href="{{ asset('Includes/styles.css') }}" rel="stylesheet" />
-    <link rel="icon" type="image/x-icon" href="{{ asset('Images/logo.png') }}">
-    @include('includes.head_links')
-
-    <style>
+@push('head')
+<style>
         body {
             background: #f8f9fa;
             font-family: 'Segoe UI', sans-serif;
@@ -79,12 +39,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             margin-bottom: 25px;
         }
     </style>
-</head>
+@endpush
 
-<body>
-    <?php echo view('includes.navbar'); ?>
-
-    <div class="container">
+@section('content')
+<div class="container">
         <div class="registration-box">
             <h2 class="fw-bold pb-3">Student Registration</h2>
 
@@ -128,8 +86,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         </div>
     </div>
-    @include('includes.footer')
-    <?php echo view('includes.body_links'); ?>
-</body>
-
-</html>
+@endsection

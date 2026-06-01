@@ -1,19 +1,12 @@
-<!doctype html>
-<html lang="en">
+@extends('layouts.site', [
+    'headPartial' => 'includes.head_links',
+    'headerPartial' => 'includes.inner_bgi',
+    'footerPartial' => 'includes.footer',
+    'scriptsPartial' => 'includes.body_links',
+])
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Parichay - BGI</title>
-    <link href="{{ asset('Includes/styles.css') }}" rel="stylesheet" />
-    <link rel="icon" type="image/x-icon" href="{{ asset('Images/logo.png') }}">
-    @include('includes.head_links')
-</head>
-
-<body>
-    @include('includes.inner_bgi')
-
-    <!-- About Us Section Start -->
+@section('content')
+<!-- About Us Section Start -->
     <div class="container">
         <section id="about-us" style="padding: 40px; font-family: Arial, sans-serif;">
             <h2 class="text-center fw-bold text-uppercase"> About the Institution</h2>
@@ -169,9 +162,4 @@ structured and dynamic learning ecosystem.
         </section>
     </div>
     <!-- About Us Section Ends -->
-
-    @include('includes.footer')
-    @include('includes.body_links')
-</body>
-
-</html>
+@endsection

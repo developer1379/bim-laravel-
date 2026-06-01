@@ -1,20 +1,12 @@
-<!doctype html>
-<html lang="en">
+@extends('layouts.site', [
+    'headPartial' => 'includes.head_links',
+    'headerPartial' => 'includes.inner_mba',
+    'footerPartial' => 'includes.footer',
+    'scriptsPartial' => 'includes.body_links',
+])
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Top Recruter - MBA</title>
-    <link href="{{ asset('../../../Includes/styles.css') }}" rel="stylesheet" />
-    <link href='https://unpkg.com' rel='stylesheet'>
-    <link rel="icon" type="image/x-icon" href="{{ asset('../../../images/logo.png') }}">
-    @include('includes.head_links')
-</head>
-
-<body>
-    @include('includes.inner_mba')
-
-    <!-- Affiliation Section Start -->
+@section('content')
+<!-- Affiliation Section Start -->
     <div class="container py-4">
        <!-- <h3 class="text-center mb-4 text-danger" data-aos="fade-up" data-aos-delay="200">Placement Drive </h3>-->
 
@@ -46,9 +38,4 @@
         </div>--->
     </div>
     <!-- Affiliation Section Ends -->
-
-    @include('includes.footer')
-    @include('includes.body_links')
-</body>
-
-</html>
+@endsection

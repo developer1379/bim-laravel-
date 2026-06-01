@@ -1,19 +1,12 @@
-<!doctype html>
-<html lang="en">
+@extends('layouts.site', [
+    'headPartial' => 'includes.head_links',
+    'headerPartial' => 'includes.navbar',
+    'footerPartial' => 'includes.footer',
+    'scriptsPartial' => 'includes.body_links',
+])
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>RESEARCH &amp; DEVELOPMENT - BIM</title>
-    <link href="{{ asset('Includes/styles.css') }}" rel="stylesheet" />
-    <link rel="icon" type="image/x-icon" href="{{ asset('Images/logo.png') }}">
-    @include('includes.head_links')
-</head>
-
-<body>
-    @include('includes.navbar')
-
-    <!-- About Us Section Start -->
+@section('content')
+<!-- About Us Section Start -->
 
     <section id="about" class="about pt-3 ">
         <div class=" container  p-0 ">
@@ -10978,9 +10971,4 @@
         </div>
     </section>
     <!-- About Us Section Ends -->
-
-    @include('includes.footer')
-    @include('includes.body_links')
-</body>
-
-</html>
+@endsection

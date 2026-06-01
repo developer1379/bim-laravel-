@@ -1,15 +1,12 @@
-<!doctype html>
-<html lang="en">
+@extends('layouts.site', [
+    'headPartial' => 'includes.head_links',
+    'headerPartial' => 'partials.site.header',
+    'footerPartial' => 'partials.site.footer',
+    'scriptsPartial' => 'partials.site.scripts',
+])
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gallery - BIHM</title>
-    <link rel="icon" type="image/x-icon" href="{{ asset('../../../Images/logo.jpg') }}">
-    @include('includes.head_links')
-    <script src="{{ asset('../../../Includes/script.js') }}"></script>
-    <link rel="stylesheet" href="{{ asset('../../../Includes/index.css') }}" />
-    <style>
+@push('head')
+<style>
         .gallery-img {
             width: 100%;
             height: 250px;
@@ -24,10 +21,10 @@
             border-radius: 10px;
         }
     </style>
-</head>
+@endpush
 
-<body>
-    <div class="container py-4">
+@section('content')
+<div class="container py-4">
         <h2 class="text-center mb-4" data-aos="fade-up" data-aos-delay="200">Our Gallery</h2>
         <div class="row g-4">
             <script>
@@ -62,6 +59,4 @@
             imageModal.show();
         }
     </script>
-</body>
-
-</html>
+@endsection

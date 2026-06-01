@@ -1,15 +1,12 @@
-<!doctype html>
-<html lang="en">
+@extends('layouts.site', [
+    'headPartial' => 'includes.head_links',
+    'headerPartial' => 'includes.navbar1',
+    'footerPartial' => 'includes.footer',
+    'scriptsPartial' => 'includes.body_links',
+])
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BOG - BIM</title>
-    <link href="{{ asset('Includes/styles.css') }}" rel="stylesheet" />
-    
-    <link rel="icon" type="image/x-icon" href="{{ asset('Images/logo.png') }}">
-    @include('includes.head_links')
-    <style>
+@push('head')
+<style>
         /* Style for the PDF container with background color */
         .pdf-container {
             background-color: #ffffff; /* Blue background */
@@ -35,12 +32,10 @@
             }
         }
     </style>
-</head>
+@endpush
 
-<body>
-    @include('includes.navbar1')
-    <!-- Carousel Start -->
-     <div class="row">
+@section('content')
+<div class="row">
          
          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12"><h4 class="text-center text-danger text-uppercase"> college video</h4></div>
 
@@ -53,13 +48,4 @@
          <a href="https://youtu.be/JgfesOatD3o?si=5gEnlamiAwUIq2yV" target="_blank" alt="college video" title="college video"> click here to view more</a>
 </div>
     </div>
-
-        
-   
-
-
-    @include('includes.footer')
-    @include('includes.body_links')
-</body>
-
-</html>
+@endsection

@@ -1,15 +1,12 @@
-<!doctype html>
-<html lang="en">
+@extends('layouts.site', [
+    'headPartial' => 'includes.head_links',
+    'headerPartial' => 'includes.navbar1',
+    'footerPartial' => 'includes.footer',
+    'scriptsPartial' => 'includes.body_links',
+])
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BOG - BIM</title>
-    <link href="{{ asset('Includes/styles.css') }}" rel="stylesheet" />
-    
-    <link rel="icon" type="image/x-icon" href="{{ asset('Images/logo.png') }}">
-    @include('includes.head_links')
-    <style>
+@push('head')
+<style>
         /* Style for the PDF container with background color */
         .pdf-container {
             background-color: #ffffff; /* Blue background */
@@ -35,12 +32,10 @@
             }
         }
     </style>
-</head>
+@endpush
 
-<body>
-    @include('includes.navbar1')
-    <!-- Carousel Start -->
-    <div class=" row">
+@section('content')
+<div class=" row">
         <div class="col-md-1 col-ls-1 col-sm-1"></div>
     <div class="col-md-10 col-ls-10 col-sm-10">
         <div class="col-md-4 col-lg-4 col-sm-4"><span class="text-left"> Ref. No.: BIM/DO/2024-25/021 </span></div>
@@ -176,10 +171,4 @@
     <!--<div class="pdf-container">
         <embed src="{{ asset('PDF/BOG.pdf#toolbar=0') }}" type="application/pdf" width="50%" height="900px" />
     </div>-->
-
-
-    @include('includes.footer')
-    @include('includes.body_links')
-</body>
-
-</html>
+@endsection

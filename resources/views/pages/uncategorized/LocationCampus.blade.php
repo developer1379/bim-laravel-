@@ -1,18 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.site', [
+    'headPartial' => 'includes.head_links',
+    'headerPartial' => 'includes.navbar',
+    'footerPartial' => 'includes.footer',
+    'scriptsPartial' => 'includes.body_links',
+])
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BIM - Campus Location</title>
-    <link rel="icon" type="image/x-icon" href="{{ asset('Images/logo.png') }}">
-    <link href="{{ asset('Includes/styles.css') }}" rel="stylesheet" />
-    @include('includes.head_links')
-</head>
-
-<body>
-    @include('includes.navbar')
-    <div class="container my-5">
+@section('content')
+<div class="container my-5">
         <div class="px-4">
             <h2 class="text-center mb-5" data-aos="fade-up" data-aos-delay="300">Contact Us</h2>
         </div>
@@ -62,9 +56,4 @@
             </div>
         </div>
     </div>
-
-    @include('includes.footer')
-    @include('includes.body_links')
-</body>
-
-</html>
+@endsection

@@ -1,20 +1,12 @@
-<!doctype html>
-<html lang="en">
+@extends('layouts.site', [
+    'headPartial' => 'includes.head_links',
+    'headerPartial' => 'includes.inner_mba',
+    'footerPartial' => 'includes.footer',
+    'scriptsPartial' => 'includes.body_links',
+])
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>mba_placement_workshop_programs - MBA</title>
-    <link href="{{ asset('../../../Includes/styles.css') }}" rel="stylesheet" />
-    <link href='https://unpkg.com' rel='stylesheet'>
-    <link rel="icon" type="image/x-icon" href="{{ asset('../../../Images/logo.png') }}">
-    @include('includes.head_links')
-</head>
-
-<body>
-    @include('includes.inner_mba')
-
-    <!-- Affiliation Section Start -->
+@section('content')
+<!-- Affiliation Section Start -->
     <div class=" container ">
         <div class="row shadow">
             <div class="col-lg-12">
@@ -86,9 +78,4 @@
         </div>
     </div>
     <!-- Affiliation Section Ends -->
-
-    @include('includes.footer')
-    @include('includes.body_links')
-</body>
-
-</html>
+@endsection

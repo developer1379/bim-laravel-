@@ -1,18 +1,12 @@
-<!doctype html>
-<html lang="en">
+@extends('layouts.site', [
+    'headPartial' => 'includes.head_links',
+    'headerPartial' => 'includes.inner_mba',
+    'footerPartial' => 'includes.footer',
+    'scriptsPartial' => 'includes.body_links',
+])
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MBA - PEO POS PSO</title>
-    <link href="{{ asset('../../../Includes/styles.css') }}" rel="stylesheet" />
-    @include('includes.head_links')
-    <link rel="icon" type="image/x-icon" href="{{ asset('../../../Images/logo.png') }}">
-</head>
-
-<body>
-    @include('includes.inner_mba')
-    <div class="container">
+@section('content')
+<div class="container">
         <div class="row">
             <h3 class="text-center my-3 text-danger" style="text-transform: uppercase;">PROGRAM OUTCOMES (POs)</h3>
            
@@ -38,8 +32,4 @@ PO5. Ability to lead themselves and others in the achievement of organizational 
             </div>
         </div>
     </div>
-    @include('includes.footer')
-    @include('includes.body_links')
-</body>
-
-</html>
+@endsection

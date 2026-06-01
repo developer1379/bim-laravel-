@@ -1,15 +1,12 @@
-<!doctype html>
-<html lang="en">
+@extends('layouts.site', [
+    'headPartial' => 'includes.head_links',
+    'headerPartial' => 'includes.inner_bba',
+    'footerPartial' => 'includes.footer',
+    'scriptsPartial' => 'includes.body_links',
+])
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BBA</title>
-    <link href="{{ asset('../../../Includes/styles.css') }}" rel="stylesheet" />
-    
-    <link rel="icon" type="image/x-icon" href="{{ asset('../../../Images/logo.png') }}">
-    @include('includes.head_links')
-    <style>
+@push('head')
+<style>
         /* Style for the PDF container with background color */
         .pdf-container {
             background-color: #ffffff; /* Blue background */
@@ -35,13 +32,10 @@
             }
         }
     </style>
-</head>
+@endpush
 
-<body>
-    @include('includes.inner_bba')
-    <!-- Carousel Start -->
-
-       <row><h4 class="text-danger text-center text-uppercase"> Notice</h4>
+@section('content')
+<row><h4 class="text-danger text-center text-uppercase"> Notice</h4>
         <h5 class="text-success text-left">Department Society (FUSION) Committee</h5>
         <h6 class="text-warning text-left">Even Semester (Jan-June – 2026) </h6>
 
@@ -174,13 +168,4 @@ Presentation </td>
     </div>
    
  <hr>
- 
-   
-
-
-
-    @include('includes.footer')
-    @include('includes.body_links')
-</body>
-
-</html>
+@endsection

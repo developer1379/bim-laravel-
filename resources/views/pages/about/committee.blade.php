@@ -1,15 +1,12 @@
-<!doctype html>
-<html lang="en">
+@extends('layouts.site', [
+    'headPartial' => 'includes.head_links',
+    'headerPartial' => 'includes.navbar1',
+    'footerPartial' => 'includes.footer',
+    'scriptsPartial' => 'includes.body_links',
+])
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BIM</title>
-    <link href="{{ asset('Includes/styles.css') }}" rel="stylesheet" />
-    
-    <link rel="icon" type="image/x-icon" href="{{ asset('Images/logo.png') }}">
-    @include('includes.head_links')
-    <style>
+@push('head')
+<style>
         /* Style for the PDF container with background color */
         .pdf-container {
             background-color: #ffffff; /* Blue background */
@@ -35,14 +32,10 @@
             }
         }
     </style>
-</head>
+@endpush
 
-<body>
-    @include('includes.navbar1')
-    <!-- Carousel Start -->
-
-
-      <row> 
+@section('content')
+<row> 
          <h4 class="text-danger text-center text-uppercase"> Notice</h4>
          <row>
         <h5 class="text-success text-left">Administrative Committee</h5>
@@ -785,13 +778,4 @@
     </div>
 
     <div><br><a href="{{ asset('PDF/commeti.pdf') }}" class="btn btn-danger text-center" target="_blank">Read More Committee</a></div><br>
-
-
-
-
-
-    @include('includes.footer')
-    @include('includes.body_links')
-</body>
-
-</html>
+@endsection

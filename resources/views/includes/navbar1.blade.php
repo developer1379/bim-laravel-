@@ -1,124 +1,16 @@
 
 
 
-<style>
-    body { margin: 0; padding: 0; overflow-x: hidden; width: 100%; min-height: 100vh; background: #f8f9fa; color: #222; }
-    section, .container, .container-fluid { color: #222; }
 
-    #header {
-        position: relative; z-index: 9999 !important;
-        background: linear-gradient(135deg, rgba(17,24,39,0.95) 0%, rgba(31,41,55,0.95) 40%, rgba(179,18,18,0.95) 40%, rgba(204,22,22,0.95) 100%); backdrop-filter: blur(10px);
-        z-index: 999;
-        transition: all 0.3s ease-in-out;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    #header.fixed-top {
-        position: fixed; top: 0; width: 100%;
-        background: linear-gradient(135deg, rgba(17, 24, 39, 0.98) 0%, rgba(31, 41, 55, 0.98) 40%, rgba(179, 18, 18, 0.98) 40%, rgba(204, 22, 22, 0.98) 100%);
-        backdrop-filter: blur(10px);
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
-    }
-    .navbar { padding: 0; }
-    .navbar ul { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; text-transform: uppercase; }
-    .navbar a {
-        display: flex; align-items: center; justify-content: space-between;
-        padding: 16px 10px; font-size: 13px; font-weight: 600; letter-spacing: 0.5px;
-        color: rgba(255, 255, 255, 0.9); text-decoration: none; transition: all 0.3s ease;
-    }
-    .navbar a i { margin-left: 4px; font-size: 12px; }
-    .navbar a:hover, .navbar .active { color: #ffffff; background: rgba(255,255,255,0.1); border-radius: 6px; }
-
-    /* Dropdown CSS */
-    .navbar .dropdown ul {
-        display: block; position: absolute; top: calc(100% + 15px); left: 0; padding: 12px 0;
-        background: #ffffff; opacity: 0; visibility: hidden;
-        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); border-radius: 8px; z-index: 999;
-        transform: translateY(15px); min-width: 220px; border: 1px solid rgba(0,0,0,0.05);
-    }
-    .navbar .dropdown:hover>ul { opacity: 1; top: 100%; visibility: visible; transform: translateY(0); }
-    .navbar .dropdown ul li { position: relative; }
-    .navbar .dropdown ul a {
-        color: #4b5563; padding: 10px 20px; font-size: 13px; font-weight: 500; text-transform: none; transition: all 0.2s ease;
-    }
-    .navbar .dropdown ul a:hover {
-        background: rgba(204, 22, 22, 0.04); color: #cc1616; padding-left: 26px;
-    }
-    .navbar .dropdown ul .dropdown ul { top: 0; left: 100%; margin-left: 5px; transform: translateX(15px); }
-    .navbar .dropdown ul .dropdown:hover>ul { transform: translateX(0); }
-
-    .dropdown-menu-left { left: auto !important; right: 100% !important; }
-
-    /* Mobile Nav Toggle */
-    .mobile-nav-toggle {
-        position: absolute; right: 20px; top: 50%; transform: translateY(-50%);
-        z-index: 10001; font-size: 2rem; background: transparent; border: none; color: #ffffff; transition: 0.3s;
-    }
-
-    @media (max-width: 1200px) {
-        .navbar a { padding: 12px 6px; font-size: 12px; }
-    }
-
-    /* Mobile Styles */
-    @media (max-width: 991px) {
-        .mobile-nav-toggle { display: block; position: fixed; top: 12px; right: 15px; color: #cc1616; z-index: 10001; background: #fff; border-radius: 6px; padding: 2px 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); border: 1px solid #f0f0f0; }
-        .mobile-nav-toggle.bi-x { color: #ffffff; margin-top: 5px !important;}
-
-        #header { background: #111827; }
-        /* On mobile, hide header by default unless navbar-mobile is active */
-        @media (max-width: 991px) {
-            #header { display: none !important; }
-        }
-        body.nav-open #header { display: flex !important; }
-
-        .navbar ul { display: none; }
-        .navbar-mobile {
-            position: fixed; background: rgba(17, 24, 39, 0.98); backdrop-filter: blur(15px);
-            top: 0; right: 0; left: 0; bottom: 0; z-index: 9999;
-            display: flex; flex-direction: column; padding: 70px 20px 30px 20px;
-            overflow-y: auto; transition: 0.3s; width: 100%;
-        }
-        .navbar-mobile ul { display: block; background: transparent; padding: 0; text-align: left; }
-        .navbar-mobile a {
-            color: #e5e7eb; padding: 16px 20px; font-size: 15px; font-weight: 500;
-            border-bottom: 1px solid rgba(255,255,255,0.06); border-radius: 0;
-        }
-        .navbar-mobile a:hover { background: rgba(255,255,255,0.05); color: #ef4444; }
-
-        .navbar-mobile .dropdown ul {
-            position: static; display: none; background: rgba(0,0,0,0.25);
-            box-shadow: none; margin: 0; padding-left: 15px; border: none; width: 100%;
-        }
-        .navbar-mobile .dropdown ul a { padding: 12px 20px; font-size: 14px; border-bottom: none; }
-        .navbar-mobile .dropdown .dropdown-active { display: block; opacity: 1; visibility: visible; }
-    }
-
-    @media (max-width: 375px) {
-        .mobile-brand-title { font-size: 11px !important; }
-        .mobile-brand-sub { font-size: 9px !important; }
-        .mobile-nav-toggle { top: 10px; right: 10px; padding: 2px 6px; font-size: 1.5rem; }
-    }
-
-</style>
 
 
 <!-- Topbar Start -->
-<div
-    class="topbar d-none d-md-block"
-    style="
-        background: linear-gradient(
-          120deg,
-          rgba(28, 28, 28, 1) 0%,
-          rgba(28, 28, 28, 1) 27%,
-          rgba(183, 0, 0, 1) 27%,
-          rgba(183, 0, 0, 1) 100%
-        );
-      ">
-    <nav class="navbar navbar-expand-lg py-1" style="padding:0px 0px 0px 5px !important">
-        <div class="container-fluid" style="padding:0px 0px !important">
+<div class="topbar d-none d-md-block modern-topbar">
+    <nav class="navbar navbar-expand-lg py-1">
+        <div class="container-fluid">
             <div class="logo">
                 <a
-                    href="{{ url('../bgi') }}" class="fs-5 fw-bolder px-0 text-white bg-transparent text-decoration-none text-uppercase" target="_blank">Buddha Group of Institution</a>
+                    href="{{ url('bgi') }}" class="fs-5 fw-bolder px-0 text-white bg-transparent text-decoration-none text-uppercase" target="_blank">Buddha Group of Institution</a>
             </div>
 
             <button
@@ -233,24 +125,24 @@
 <!-- Topbar Ends -->
 <!-- Middle Section Start -->
 <!-- Desktop and Tablet View -->
-<section class="middle shadow-sm" style="background-color: #ffffff; border-bottom: 1px solid rgba(0,0,0,0.05);">
+<section class="middle modern-middle-section shadow-sm">
     <div class="container py-2 d-none d-md-block">
         <div class="row">
             <div class="col-md-4 col-sm-4 col-xs-4">
                 <center>
-                    <a href="{{ url('../index') }}">
+                    <a href="{{ url('/') }}">
                         <img src="{{ asset('../images/logo.png') }}" class="img-fluid w-logo" style="max-height: 80px; width: auto;" />
                     </a>
                 </center>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-6 text-center">
-                <h3 class="w-tsh text-danger fw-bold mb-1" style="font-size: 1.6rem; letter-spacing: 0.5px;">
+                <h3 class="modern-brand-title mb-1">
                     BUDDHA INSTITUTE OF MANAGEMENT, GIDA, GORAKHPUR
                 </h2>
-                <!--<h3 class="w-tsh text-danger fw-bold mb-1" style="font-size: 1.6rem; letter-spacing: 0.5px;">
+                <!--<h3 class="modern-brand-title mb-1">
                     बुद्धा इंस्टिट्यूट ऑफ़ मैनेजमेंट, गीडा, गोरखपुर
                 </h2>-->
-                <p class="text-muted mb-0" style="font-size: 0.9rem; font-weight: 500;">
+                <p class="modern-brand-sub mb-0">
                     Approved by AICTE, New Delhi & Affiliated to Dr. A.P.J. Abdul
                     Kalam Technical University, Lucknow, Uttar Pradesh
                     <span class="bg-warning px-2 text-dark">College Code - 1212
@@ -271,7 +163,7 @@
     <div class="container-fluid py-2 d-block d-md-none shadow-sm" style="background-color: #ffffff; position: sticky; top: 0; z-index: 10000; min-height: 65px;">
         <div class="row align-items-center px-1 h-100">
             <div class="col-10 pe-0">
-                <a href="{{ url('../index') }}" class="d-flex align-items-center text-decoration-none">
+                <a href="{{ url('/') }}" class="d-flex align-items-center text-decoration-none">
                     <img src="{{ asset('../images/logo.png') }}" class="img-fluid" style="max-height: 42px; width: auto;" />
                     <div class="ms-2 d-flex flex-column text-start justify-content-center">
                         <span class="text-danger fw-bold lh-sm mobile-brand-title" style="font-size: 13px; text-transform: uppercase;">Buddha Institute of Management</span>
@@ -290,7 +182,7 @@
 </section>
 <!-- Middle Section Ends -->
 <!-- Header -->
-<header id="header" class="d-flex align-items-center py-2" style="padding:0px 0px 0px 5px !important">
+<header id="header" class="d-flex align-items-center py-2">
     <div class="container-fluid d-flex align-items-center justify-content-between" style="padding:0px 0px !important">
         <!--div class="logo">
             <a href="https://www.bimgkp.ac.in/index.php"   data-bs-toggle="tooltip" data-bs-placement="top" class="text-decoration-none text-light fs-3 fw-bold" title="Buddha Group of Institutions">BGI</a>
@@ -298,7 +190,7 @@
         <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
         <nav id="navbar" class="navbar">
             <ul>
-                <li><a class="nav-link scrollto" href="{{ url('../index') }}"><i class="bx bxs-home fs-3"></i></a></li>
+                <li><a class="nav-link scrollto" href="{{ url('/') }}"><i class="bx bxs-home fs-3"></i></a></li>
 
                 <!-- ABOUT US -->
                 <li class="dropdown">
@@ -597,7 +489,7 @@
                     <a href="#"><span>Examination</span><i class="bi bi-chevron-down"></i></a>
                     <ul>
                         <li><a href="{{ url('examination') }}"  >Examination Committee</a></li>
-                        <li><a href="{{ url('../index') }}">Examination Notices</a></li>
+                        <li><a href="{{ url('/') }}">Examination Notices</a></li>
                         <li><a href="https://nad.digitallocker.gov.in/students"  >DigiLocker NAD</a></li>
                         <li><a href="https://erp.aktu.ac.in/"  >Degree/Migration</a></li>
                     </ul>
@@ -607,8 +499,8 @@
                <!-- <li class="dropdown">
                     <a href="#"><span>Careers</span><i class="bi bi-chevron-down"></i></a>
                     <ul>
-                        <li><a href="{{ url('../index') }}">Faculty Positions</a></li>
-                        <li><a href="{{ url('../index') }}">Non-Teaching Positions</a></li>
+                        <li><a href="{{ url('/') }}">Faculty Positions</a></li>
+                        <li><a href="{{ url('/') }}">Non-Teaching Positions</a></li>
                     </ul>
                 </li>-->
 
@@ -616,8 +508,8 @@
                <!-- <li class="dropdown">
                     <a href="#"><span>Department</span><i class="bi bi-chevron-down"></i></a>
                     <ul>
-                        <li><a href="{{ url('../index') }}">Faculty Positions</a></li>
-                        <li><a href="{{ url('../index') }}">Non-Teaching Positions</a></li>
+                        <li><a href="{{ url('/') }}">Faculty Positions</a></li>
+                        <li><a href="{{ url('/') }}">Non-Teaching Positions</a></li>
                     </ul>
                 </li>-->
 
@@ -685,10 +577,10 @@
                 <!--<li class="dropdown">
                     <a href="#"><span>Teaching Pedagogy</span><i class="bi bi-chevron-down"></i></a>
                      <ul>
-                        <li><a href="{{ url('../index') }}">Achievement </a></li>
-                        <li><a href="{{ url('../index') }}">Buddha Series</a></li>
-                        <li><a href="{{ url('../index') }}">Success Program </a></li>
-                        <li><a href="{{ url('../index') }}">Mentor Mentee Register</a></li>
+                        <li><a href="{{ url('/') }}">Achievement </a></li>
+                        <li><a href="{{ url('/') }}">Buddha Series</a></li>
+                        <li><a href="{{ url('/') }}">Success Program </a></li>
+                        <li><a href="{{ url('/') }}">Mentor Mentee Register</a></li>
                     </ul>
                 </li>-->
 
@@ -721,47 +613,7 @@
     </div>
 </header>
 
-<div class=" container-fluid bg-dark pt-2">
-    <div class="row">
-        <div class="md-4 col-lg-4 col-sm-4"></div>
-        <div class="md-4 col-lg-4 col-sm-4 navbar anc">
-    <ul style="padding: 5px 5px;  margin: 2px 20px;">
 
-   <li class="dropdown"><img id="Repeater_scroll_Image1_2" src="{{ asset('../Images/new.gif') }}" style="height:7px;width:22px;" />
-
-        &nbsp;
-         <a id="Repeater_scroll_HyperLink1_0" class="w-txt-14 text-white me-5 text-decoration-none" href="#"   style=" display: inline !important;, font-weight: 700;  color: #e52f2f !important;  font-size: 17px;">
-            <span>Admission in 2026-2027 </span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-                <li> <a href="{{ url('../courses_offered') }}">Courses Offered </a> </li>
-                <li><a href="{{ url('../bgi_brochure') }}">Brochure</a></li>
-                <li><a href="{{ url('../ap') }}" > Admission Process</a> </li>
-                <!--<li><a href="#"  >Admission Form</a></li>-->
-                <li><a href="{{ url('../contact') }}">Contact Us</a></li>
-                <li><a href="https://www.youtube.com/watch?si=5gEnlamiAwUIq2yV&v=JgfesOatD3o&feature=youtu.be" target="_blank"> College Video </a></li>
-
-            </ul>
-
-<!--<a id="Repeater_scroll_HyperLink1_0" class="w-txt-14 text-white me-5 text-decoration-none" href="#"  >
-            Upcomming Event</a>
-
-<a id="Repeater_scroll_HyperLink1_0" class="w-txt-14 text-white me-5 text-decoration-none" href="#"  >
-            Awards</a>
-
-<a id="Repeater_scroll_HyperLink1_0" class="w-txt-14 text-white me-5 text-decoration-none" href="#"  >
-            Student Activities</a>
-
- <a id="Repeater_scroll_HyperLink1_0" class="w-txt-14 text-white me-5 text-decoration-none" href="#"  >
-            Achievement</a>-->
-
-        </li>
-
-    </ul>
-</div>
-<div class="md-4 col-lg-4 col-sm-4"></div>
-</div>
-
-</div>
 <!-- Scripts -->
 <script>
     (function() {
@@ -997,7 +849,7 @@
     </div>
 
     <div class="mob-nav-links">
-        <a class="mob-link" href="{{ url('../index') }}"><span><i class="bi bi-house-fill me-2" style="color:#ef4444;"></i> Home</span></a>
+        <a class="mob-link" href="{{ url('/') }}"><span><i class="bi bi-house-fill me-2" style="color:#ef4444;"></i> Home</span></a>
 
         <a class="mob-drop-trigger" href="#"><span><i class="bi bi-info-circle me-2" style="color:#ef4444;"></i> About Us</span><i class="bi bi-chevron-right mob-chevron"></i></a>
         <div class="mob-submenu">
