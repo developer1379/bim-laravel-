@@ -1,3 +1,7 @@
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
 body { font-family: 'Poppins', sans-serif !important; }
 /* Extracted from index.blade.php */
 
@@ -1543,18 +1547,19 @@ body {
 
 /* Navbar Links */
 .navbar { padding: 0; }
-.navbar ul { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; }
+.navbar ul { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: nowrap; }
 .navbar a {
     display: flex; align-items: center; justify-content: space-between;
-    padding: 8px 10px; font-size: 13px; font-weight: 600; letter-spacing: 0px;
+    padding: 8px 8px; font-size: 12.5px; font-weight: 600; letter-spacing: 0px;
     color: #ffffff; text-decoration: none; transition: background 0.3s ease;
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     text-transform: uppercase;
+    white-space: nowrap;
 }
 /* First item border */
 .navbar > ul > li:first-child > a { border-left: 1px solid rgba(255, 255, 255, 0.2); }
 
-.navbar a i { margin-left: 6px; font-size: 14px; }
+.navbar a i { margin-left: 3px; font-size: 11px; }
 
 .navbar > ul > li > a:hover, .navbar > ul > li > .active {
     background: #a81111; /* Darker theme red */
@@ -1602,9 +1607,17 @@ body {
     color: #6b7280;
 }
 
-/* Mobile Styles */
-@media (max-width: 1200px) {
-    .navbar a { padding: 12px 6px; font-size: 12px; }
+/* Responsive Desktop & Mobile Styles */
+@media (max-width: 1450px) {
+    .navbar a { padding: 8px 6px; font-size: 11.5px; }
+    .navbar a i { margin-left: 2px; font-size: 10px; }
+}
+@media (max-width: 1250px) {
+    .navbar a { padding: 8px 4px; font-size: 10.5px; }
+    .navbar a i { margin-left: 1px; font-size: 9px; }
+}
+@media (max-width: 1100px) {
+    .navbar a { padding: 8px 3px; font-size: 9.5px; }
 }
 @media (max-width: 991px) {
     #header { display: none !important; }
@@ -1699,7 +1712,6 @@ body {
 
 /* MacBook specific compactness */
 @media (max-width: 1440px) {
-    .navbar a { padding: 8px 10px; font-size: 13px; }
     .w-head h2 { font-size: 1.4rem; }
     .w-head h5 { font-size: 1rem; }
     .w-head h6 { font-size: 0.8rem; }
