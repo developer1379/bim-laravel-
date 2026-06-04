@@ -33,15 +33,14 @@
                         <div id="heroPortalCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel"
                             data-bs-interval="4500" style="height: 100%;">
                             <div class="carousel-inner" style="height: 100%;">
-                                <div class="carousel-item active">
-                                    <img src="{{ asset('images/1.jpg') }}" alt="Campus 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('images/2.jpg') }}" alt="Campus 2">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('images/3.jpg') }}" alt="Campus 3">
-                                </div>
+                                @for ($i = 1; $i <= 18; $i++)
+                                    @php
+                                        $ext = ($i >= 14) ? 'png' : 'jpg';
+                                    @endphp
+                                    <div class="carousel-item {{ $i == 1 ? 'active' : '' }}">
+                                        <img src="{{ asset('images/bit_slider/bit-' . $i . '.' . $ext) }}" alt="BIT Campus Slide {{ $i }}">
+                                    </div>
+                                @endfor
                             </div>
 
                             <!-- Navigation Arrows (Slide Buttons) -->
@@ -277,113 +276,19 @@
 
                         <div class="swiper mySwiper pb-5">
                             <div class="swiper-wrapper">
-                                <!-- Slide 1 -->
+                                @for ($i = 1; $i <= 15; $i++)
                                 <div class="swiper-slide px-2 py-3">
-                                    <div class="material-user-card">
-                                        <div class="material-card-header">
-                                            <img src="{{ asset('images/top_placement_bIM/1.jpeg') }}" alt="Harshita Srivastava">
-                                            <div class="material-badge">18 LPA</div>
-                                        </div>
-                                        <div class="material-card-content">
-                                            <h4 class="material-name">Harshita Srivastava</h4>
-                                            <span class="material-course">MBA (2024-26)</span>
-                                            <div class="material-company">
-                                                <i class="bi bi-building"></i> Deloitte
-                                            </div>
-                                        </div>
+                                    <div class="d-flex justify-content-center" style="height: 300px;">
+                                        <img class="img-fluid img-responsive" style="border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.06);" src="{{ asset('images/bit_placement_img/' . $i . '.jpeg') }}" alt="Top Placement {{ $i }}">
                                     </div>
                                 </div>
-
-                                <!-- Slide 2 -->
-                                <div class="swiper-slide px-2 py-3">
-                                    <div class="material-user-card">
-                                        <div class="material-card-header">
-                                            <img src="{{ asset('images/top_placement_bIM/2.jpeg') }}" alt="Aditya Kumar Singh">
-                                            <div class="material-badge">8 LPA</div>
-                                        </div>
-                                        <div class="material-card-content">
-                                            <h4 class="material-name">Aditya Kumar Singh</h4>
-                                            <span class="material-course">MBA (Batch 2025)</span>
-                                            <div class="material-company">
-                                                <i class="bi bi-building"></i> India Compressor
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Slide 3 -->
-                                <div class="swiper-slide px-2 py-3">
-                                    <div class="material-user-card">
-                                        <div class="material-card-header">
-                                            <img src="{{ asset('images/top_placement_bIM/3.jpeg') }}" alt="Sneha Pandey">
-                                            <div class="material-badge">6 LPA</div>
-                                        </div>
-                                        <div class="material-card-content">
-                                            <h4 class="material-name">Sneha Pandey</h4>
-                                            <span class="material-course">MBA (Batch 2025)</span>
-                                            <div class="material-company">
-                                                <i class="bi bi-building"></i> Welspun gcc
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Slide 4 -->
-                                <div class="swiper-slide px-2 py-3">
-                                    <div class="material-user-card">
-                                        <div class="material-card-header">
-                                            <img src="{{ asset('images/top_placement_bIM/4.jpeg') }}" alt="Priya Bhatt">
-                                            <div class="material-badge">5.5 LPA</div>
-                                        </div>
-                                        <div class="material-card-content">
-                                            <h4 class="material-name">Priya Bhatt</h4>
-                                            <span class="material-course">MBA (Batch 2026)</span>
-                                            <div class="material-company">
-                                                <i class="bi bi-building"></i> Capgemini
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Slide 5 -->
-                                <div class="swiper-slide px-2 py-3">
-                                    <div class="material-user-card">
-                                        <div class="material-card-header">
-                                            <img src="{{ asset('images/top_placement_bIM/5.jpg') }}" alt="Amit Kumar Dubey">
-                                            <div class="material-badge">5.5 LPA</div>
-                                        </div>
-                                        <div class="material-card-content">
-                                            <h4 class="material-name">Amit Kumar Dubey</h4>
-                                            <span class="material-course">MBA (Batch 2026)</span>
-                                            <div class="material-company">
-                                                <i class="bi bi-building"></i> Nikham Innov.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Slide 6 -->
-                                <div class="swiper-slide px-2 py-3">
-                                    <div class="material-user-card">
-                                        <div class="material-card-header">
-                                            <img src="{{ asset('images/top_placement_bIM/6.jpeg') }}" alt="Atrish Shukla">
-                                            <div class="material-badge">4.49 LPA</div>
-                                        </div>
-                                        <div class="material-card-content">
-                                            <h4 class="material-name">Atrish Shukla</h4>
-                                            <span class="material-course">MBA (Batch 2026)</span>
-                                            <div class="material-company">
-                                                <i class="bi bi-building"></i> Seeds Fincap
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                @endfor
                             </div>
                             <!-- Swiper Pagination -->
                             <div class="swiper-pagination mt-4"></div>
                         </div>
                         
-                        <div class="text-center mt-5">
+                        <div class="text-center mt-4">
                             <a href="{{ url('top-placement') }}" target="_blank" class="achievement-btn" style="padding: 12px 35px; font-size: 1.1rem; border-radius: 50px;">
                                 <i class="bi bi-award-fill me-2"></i> View All Placements
                             </a>
@@ -410,7 +315,7 @@
             <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                 <div class="achievement-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="achievement-img-wrapper">
-                        <img src="{{ asset('images/bim_achi/1.jpeg') }}" alt="Achievement Milestone 1" loading="lazy" />
+                        <img src="{{ asset('images/bit_achiv/1.jpeg') }}" alt="Achievement Milestone 1" loading="lazy" />
                     </div>
                     <div class="achievement-content">
                         <h3 class="achievement-title">Recognized for Excellence in Education 2023</h3>
@@ -424,10 +329,10 @@
             <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                 <div class="achievement-card" data-aos="fade-up" data-aos-delay="400">
                     <div class="achievement-img-wrapper">
-                        <img src="{{ asset('images/bim_achi/2.jpeg') }}" alt="Achievement Milestone 2" loading="lazy" />
+                        <img src="{{ asset('images/bit_achiv/2.jpeg') }}" alt="Achievement Milestone 2" loading="lazy" />
                     </div>
                     <div class="achievement-content">
-                        <h3 class="achievement-title">Best Emerging Management Institute Award</h3>
+                        <h3 class="achievement-title">Best Emerging Engineering & Technology Institute Award</h3>
                         <a href="{{ url('bim_achi') }}" target="_blank" class="achievement-btn">
                             Read Story <i class="bi bi-arrow-right"></i>
                         </a>
@@ -438,7 +343,7 @@
             <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                 <div class="achievement-card" data-aos="fade-up" data-aos-delay="500">
                     <div class="achievement-img-wrapper">
-                        <img src="{{ asset('images/bim_achi/1.jpeg') }}" alt="Achievement Milestone 3" loading="lazy" />
+                        <img src="{{ asset('images/bit_achiv/3.jpeg') }}" alt="Achievement Milestone 3" loading="lazy" />
                     </div>
                     <div class="achievement-content">
                         <h3 class="achievement-title">Top Placement Record in the Region</h3>
@@ -452,7 +357,7 @@
             <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                 <div class="achievement-card" data-aos="fade-up" data-aos-delay="600">
                     <div class="achievement-img-wrapper">
-                        <img src="{{ asset('images/bim_achi/2.jpeg') }}" alt="Achievement Milestone 4" loading="lazy" />
+                        <img src="{{ asset('images/bit_achiv/4.jpeg') }}" alt="Achievement Milestone 4" loading="lazy" />
                     </div>
                     <div class="achievement-content">
                         <h3 class="achievement-title">National Level Sports Championship Winners</h3>
