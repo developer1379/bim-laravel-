@@ -539,6 +539,121 @@
     </div>
 </section>
 
+<!-- Social Media Feed Section Start -->
+<section class="social-media-feed-section py-5 bg-white">
+    <div class="container">
+        <div class="text-center mb-5 pb-2">
+            <h2 class="section-header-title" data-aos="fade-up">Social <span style="color:#cc1616;">Connect</span></h2>
+            <p class="text-muted" data-aos="fade-up" data-aos-delay="100" style="font-size: 1.05rem;">Stay updated with our latest happenings across all social platforms</p>
+        </div>
+
+        <!-- Social Media Grid -->
+        <div class="row g-4 justify-content-center">
+            <!-- Facebook Card -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="social-feed-card facebook-card">
+                    <div class="social-card-header">
+                        <div class="profile-info">
+                            <img src="{{ asset('images/bit.png') }}" alt="BIT Logo" class="profile-img">
+                            <div>
+                                <h5 class="profile-name">Buddha Institute of Technology <i class="bi bi-patch-check-fill verified-badge"></i></h5>
+                                <span class="post-time">2 hours ago · <i class="bi bi-globe"></i></span>
+                            </div>
+                        </div>
+                        <a href="https://facebook.com" target="_blank" class="social-platform-icon"><i class="bi bi-facebook"></i></a>
+                    </div>
+                    <div class="social-card-body">
+                        <p class="post-text">Excited to announce that the Placement Drive 2026 has commenced! Major MNCs like Deloitte, Capgemini, and others are conducting campus drives this week. Best wishes to all our final year students! 🎓🚀 #BITGorakhpur #Placements2026 #Success</p>
+                        <div class="post-image-wrapper">
+                            <img src="{{ asset('images/top_placement_bIM/1.jpeg') }}" alt="Placement Drive" class="post-image">
+                        </div>
+                    </div>
+                    <div class="social-card-footer">
+                        <div class="interactions">
+                            <span><i class="bi-hand-thumbs-up-fill text-primary"></i> 142 Likes</span>
+                            <span>24 Comments</span>
+                        </div>
+                        <hr class="my-2">
+                        <a href="https://facebook.com" target="_blank" class="view-post-btn"><i class="bi bi-box-arrow-up-right me-1"></i> View on Facebook</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Instagram Card -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="social-feed-card instagram-card">
+                    <div class="social-card-header">
+                        <div class="profile-info">
+                            <img src="{{ asset('images/bit.png') }}" alt="BIT Logo" class="profile-img">
+                            <div>
+                                <h5 class="profile-name">bit_gorakhpur <i class="bi bi-patch-check-fill verified-badge"></i></h5>
+                                <span class="post-time">5 hours ago</span>
+                            </div>
+                        </div>
+                        <a href="https://instagram.com" target="_blank" class="social-platform-icon"><i class="bi bi-instagram"></i></a>
+                    </div>
+                    <div class="social-card-body">
+                        <p class="post-text">Glimpses of the Annual Tech Symposium "TechGenesis 2026" held at our state-of-the-art campus! Our innovative students showcased incredible projects in Robotics, AI, and IoT. 🤖💡✨ #TechGenesis #Innovation #EngineeringLife</p>
+                        <div class="post-image-wrapper">
+                            <img src="{{ asset('images/bim_achi/2.jpeg') }}" alt="Tech Event" class="post-image">
+                        </div>
+                    </div>
+                    <div class="social-card-footer">
+                        <div class="interactions">
+                            <span><i class="bi-heart-fill text-danger"></i> 384 Likes</span>
+                            <span>18 Comments</span>
+                        </div>
+                        <hr class="my-2">
+                        <a href="https://instagram.com" target="_blank" class="view-post-btn"><i class="bi bi-box-arrow-up-right me-1"></i> View on Instagram</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LinkedIn Card -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="social-feed-card linkedin-card">
+                    <div class="social-card-header">
+                        <div class="profile-info">
+                            <img src="{{ asset('images/bit.png') }}" alt="BIT Logo" class="profile-img">
+                            <div>
+                                <h5 class="profile-name">Buddha Institute of Technology <i class="bi bi-patch-check-fill verified-badge"></i></h5>
+                                <span class="post-time">1 day ago · <i class="bi bi-globe"></i></span>
+                            </div>
+                        </div>
+                        <a href="https://linkedin.com" target="_blank" class="social-platform-icon"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                    <div class="social-card-body">
+                        <p class="post-text">We are proud to share that Buddha Institute of Technology (BIT) has been recognized as the "Best Emerging Engineering Institute" for excellence in technical education. Thank you to our dedicated faculty, hard-working students, and alumni network! 🌟💼</p>
+                        <div class="post-image-wrapper">
+                            <img src="{{ asset('images/bim_achi/1.jpeg') }}" alt="Award Ceremony" class="post-image">
+                        </div>
+                    </div>
+                    <div class="social-card-footer">
+                        <div class="interactions">
+                            <span><i class="bi-hand-thumbs-up-fill text-primary"></i> 512 Likes</span>
+                            <span>42 Comments</span>
+                        </div>
+                        <hr class="my-2">
+                        <a href="https://linkedin.com" target="_blank" class="view-post-btn"><i class="bi bi-box-arrow-up-right me-1"></i> View on LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Follow Us Badges -->
+        <div class="follow-us-bar mt-5 text-center p-4 rounded-4" style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); border: 1px solid rgba(0,0,0,0.05);" data-aos="fade-up">
+            <h5 class="mb-3 fw-bold">Follow Our Official Handles</h5>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <a href="https://facebook.com" target="_blank" class="btn btn-facebook d-inline-flex align-items-center gap-2 px-4 py-2 border-0 text-white" style="background-color: #1877f2; border-radius: 50px; font-weight: 600; font-size: 0.95rem; transition: transform 0.2s;"><i class="bi bi-facebook"></i> Facebook</a>
+                <a href="https://instagram.com" target="_blank" class="btn btn-instagram d-inline-flex align-items-center gap-2 px-4 py-2 border-0 text-white" style="background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); border-radius: 50px; font-weight: 600; font-size: 0.95rem; transition: transform 0.2s;"><i class="bi bi-instagram"></i> Instagram</a>
+                <a href="https://linkedin.com" target="_blank" class="btn btn-linkedin d-inline-flex align-items-center gap-2 px-4 py-2 border-0 text-white" style="background-color: #0a66c2; border-radius: 50px; font-weight: 600; font-size: 0.95rem; transition: transform 0.2s;"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                <a href="https://youtube.com" target="_blank" class="btn btn-youtube d-inline-flex align-items-center gap-2 px-4 py-2 border-0 text-white" style="background-color: #ff0000; border-radius: 50px; font-weight: 600; font-size: 0.95rem; transition: transform 0.2s;"><i class="bi bi-youtube"></i> YouTube</a>
+                <a href="https://x.com" target="_blank" class="btn btn-x d-inline-flex align-items-center gap-2 px-4 py-2 border-0 text-white" style="background-color: #000000; border-radius: 50px; font-weight: 600; font-size: 0.95rem; transition: transform 0.2s;"><i class="bi bi-twitter-x"></i> Twitter / X</a>
+            </div>
+        </div>
+    </div>
+</section>
+
     <!--ends--
 
     </div>

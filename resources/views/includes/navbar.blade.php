@@ -1,119 +1,306 @@
 <style>
-    body { margin: 0; padding: 0; overflow-x: hidden; width: 100%; min-height: 100vh; background: #f8f9fa; }
-    
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        width: 100%;
+        min-height: 100vh;
+        background: #f8f9fa;
+    }
+
     #header {
-        position: relative; z-index: 9999 !important;
-        background: linear-gradient(135deg, rgba(17,24,39,0.95) 0%, rgba(31,41,55,0.95) 40%, rgba(179,18,18,0.95) 40%, rgba(204,22,22,0.95) 100%); backdrop-filter: blur(10px);
+        position: relative;
+        z-index: 9999 !important;
+        background: linear-gradient(135deg, rgba(17, 24, 39, 0.95) 0%, rgba(31, 41, 55, 0.95) 40%, rgba(179, 18, 18, 0.95) 40%, rgba(204, 22, 22, 0.95) 100%);
+        backdrop-filter: blur(10px);
         z-index: 999;
         transition: all 0.3s ease-in-out;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
+
     #header.fixed-top {
-        position: fixed; top: 0; width: 100%;
+        position: fixed;
+        top: 0;
+        width: 100%;
         background: linear-gradient(135deg, rgba(17, 24, 39, 0.98) 0%, rgba(31, 41, 55, 0.98) 40%, rgba(179, 18, 18, 0.98) 40%, rgba(204, 22, 22, 0.98) 100%);
         backdrop-filter: blur(10px);
         box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
     }
-    .navbar { padding: 0; }
-    .navbar ul { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: nowrap !important; text-transform: uppercase; }
+
+    .navbar {
+        padding: 0;
+    }
+
+    /* Enforce single line desktop view ONLY for top-level list items */
+    .navbar>ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        justify-content: space-between;
+        width: 100%;
+        text-transform: uppercase;
+    }
+
+    /* Ensure nested dropdown items display vertically and not as flex rows */
+    .navbar .dropdown ul {
+        display: block !important;
+    }
+
+    .navbar .dropdown ul li {
+        display: block !important;
+    }
+
     .navbar a {
-        display: flex; align-items: center; justify-content: space-between;
-        padding: 16px 10px; font-size: 13px; font-weight: 600; letter-spacing: 0.5px;
-        color: rgba(255, 255, 255, 0.9); text-decoration: none; transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 10px;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        color: rgba(255, 255, 255, 0.9);
+        text-decoration: none;
+        transition: all 0.3s ease;
         white-space: nowrap !important;
     }
-    .navbar a i { margin-left: 4px; font-size: 12px; }
-    .navbar a:hover, .navbar .active { color: #ffffff; background: rgba(255,255,255,0.1); border-radius: 6px; }
+
+    .navbar a i {
+        margin-left: 4px;
+        font-size: 12px;
+    }
+
+    .navbar a:hover,
+    .navbar .active {
+        color: #ffffff;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 6px;
+    }
 
     /* Prevent wrapping of navbar elements and enforce single line desktop view */
     @media (max-width: 1400px) {
         .navbar a {
             font-size: 11px !important;
-            padding: 10px 5px !important;
+            padding: 10px 4px !important;
         }
     }
+
     @media (max-width: 1200px) {
         .navbar a {
             font-size: 10px !important;
-            padding: 10px 3px !important;
+            padding: 8px 2px !important;
         }
     }
 
     /* Dropdown CSS */
     .navbar .dropdown ul {
-        display: block; position: absolute; top: calc(100% + 15px); left: 0; padding: 12px 0;
-        background: #ffffff; opacity: 0; visibility: hidden;
+        display: block;
+        position: absolute;
+        top: calc(100% + 15px);
+        left: 0;
+        padding: 12px 0;
+        background: #ffffff;
+        opacity: 0;
+        visibility: hidden;
         transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); border-radius: 8px; z-index: 999;
-        transform: translateY(15px); min-width: 220px; border: 1px solid rgba(0,0,0,0.05);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        border-radius: 8px;
+        z-index: 999;
+        transform: translateY(15px);
+        min-width: 220px;
+        border: 1px solid rgba(0, 0, 0, 0.05);
     }
-    .navbar .dropdown:hover>ul { opacity: 1; top: 100%; visibility: visible; transform: translateY(0); }
-    .navbar .dropdown ul li { position: relative; }
-    .navbar .dropdown ul a {
-        color: #4b5563; padding: 10px 20px; font-size: 13px; font-weight: 500; text-transform: none; transition: all 0.2s ease;
-    }
-    .navbar .dropdown ul a:hover {
-        background: rgba(204, 22, 22, 0.04); color: #cc1616; padding-left: 26px;
-    }
-    .navbar .dropdown ul .dropdown ul { top: 0; left: 100%; margin-left: 5px; transform: translateX(15px); }
-    .navbar .dropdown ul .dropdown:hover>ul { transform: translateX(0); }
 
-    .dropdown-menu-left { left: auto !important; right: 100% !important; }
+    .navbar .dropdown:hover>ul {
+        opacity: 1;
+        top: 100%;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .navbar .dropdown ul li {
+        position: relative;
+    }
+
+    .navbar .dropdown ul a {
+        color: #4b5563;
+        padding: 10px 20px;
+        font-size: 13px;
+        font-weight: 500;
+        text-transform: none;
+        transition: all 0.2s ease;
+    }
+
+    .navbar .dropdown ul a:hover {
+        background: rgba(204, 22, 22, 0.04);
+        color: #cc1616;
+        padding-left: 26px;
+    }
+
+    .navbar .dropdown ul .dropdown ul {
+        top: 0;
+        left: 100%;
+        margin-left: 5px;
+        transform: translateX(15px);
+    }
+
+    .navbar .dropdown ul .dropdown:hover>ul {
+        transform: translateX(0);
+    }
+
+    .dropdown-menu-left {
+        left: auto !important;
+        right: 100% !important;
+    }
 
     /* Mobile Nav Toggle */
     .mobile-nav-toggle {
-        position: absolute; right: 20px; top: 50%; transform: translateY(-50%);
-        z-index: 10001; font-size: 2rem; background: transparent; border: none; color: #ffffff; transition: 0.3s;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10001;
+        font-size: 2rem;
+        background: transparent;
+        border: none;
+        color: #ffffff;
+        transition: 0.3s;
     }
 
     @media (max-width: 1200px) {
-        .navbar a { padding: 12px 6px; font-size: 12px; }
+        .navbar a {
+            padding: 12px 6px;
+            font-size: 12px;
+        }
     }
 
     /* Mobile Styles */
     @media (max-width: 991px) {
-        .mobile-nav-toggle { display: block; position: fixed; top: 12px; right: 15px; color: #cc1616; z-index: 10001; background: #fff; border-radius: 6px; padding: 2px 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); border: 1px solid #f0f0f0; }
-        .mobile-nav-toggle.bi-x { color: #ffffff; margin-top: 5px !important;}
-        
-        #header { background: #111827; display: none !important; } .navbar-mobile #header { display: block !important; }
-        
-        .navbar ul { display: none; }
+        .mobile-nav-toggle {
+            display: block;
+            position: fixed;
+            top: 12px;
+            right: 15px;
+            color: #cc1616;
+            z-index: 10001;
+            background: #fff;
+            border-radius: 6px;
+            padding: 2px 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            border: 1px solid #f0f0f0;
+        }
+
+        .mobile-nav-toggle.bi-x {
+            color: #ffffff;
+            margin-top: 5px !important;
+        }
+
+        #header {
+            background: #111827;
+            display: none !important;
+        }
+
+        .navbar-mobile #header {
+            display: block !important;
+        }
+
+        .navbar ul {
+            display: none;
+        }
+
         .navbar-mobile {
-            position: fixed; background: rgba(17, 24, 39, 0.98); backdrop-filter: blur(15px);
-            top: 0; right: 0; left: 0; bottom: 0; z-index: 9999;
-            display: flex; flex-direction: column; padding: 70px 20px 30px 20px;
-            overflow-y: auto; transition: 0.3s; width: 100%;
+            position: fixed;
+            background: rgba(17, 24, 39, 0.98);
+            backdrop-filter: blur(15px);
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            padding: 70px 20px 30px 20px;
+            overflow-y: auto;
+            transition: 0.3s;
+            width: 100%;
         }
-        .navbar-mobile ul { display: block; background: transparent; padding: 0; text-align: left; }
+
+        .navbar-mobile ul {
+            display: block;
+            background: transparent;
+            padding: 0;
+            text-align: left;
+        }
+
         .navbar-mobile a {
-            color: #e5e7eb; padding: 16px 20px; font-size: 15px; font-weight: 500;
-            border-bottom: 1px solid rgba(255,255,255,0.06); border-radius: 0;
+            color: #e5e7eb;
+            padding: 16px 20px;
+            font-size: 15px;
+            font-weight: 500;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 0;
         }
-        .navbar-mobile a:hover { background: rgba(255,255,255,0.05); color: #ef4444; }
-        
+
+        .navbar-mobile a:hover {
+            background: rgba(255, 255, 255, 0.05);
+            color: #ef4444;
+        }
+
         .navbar-mobile .dropdown ul {
-            position: static; display: none; background: rgba(0,0,0,0.25);
-            box-shadow: none; margin: 0; padding-left: 15px; border: none; width: 100%;
+            position: static;
+            display: none;
+            background: rgba(0, 0, 0, 0.25);
+            box-shadow: none;
+            margin: 0;
+            padding-left: 15px;
+            border: none;
+            width: 100%;
         }
-        .navbar-mobile .dropdown ul a { padding: 12px 20px; font-size: 14px; border-bottom: none; }
-        .navbar-mobile .dropdown .dropdown-active { display: block; opacity: 1; visibility: visible; }
+
+        .navbar-mobile .dropdown ul a {
+            padding: 12px 20px;
+            font-size: 14px;
+            border-bottom: none;
+        }
+
+        .navbar-mobile .dropdown .dropdown-active {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+        }
     }
 
     @media (max-width: 375px) {
-        .mobile-brand-title { font-size: 11px !important; }
-        .mobile-brand-sub { font-size: 9px !important; }
-        .mobile-nav-toggle { top: 10px; right: 10px; padding: 2px 6px; font-size: 1.5rem; }
+        .mobile-brand-title {
+            font-size: 11px !important;
+        }
+
+        .mobile-brand-sub {
+            font-size: 9px !important;
+        }
+
+        .mobile-nav-toggle {
+            top: 10px;
+            right: 10px;
+            padding: 2px 6px;
+            font-size: 1.5rem;
+        }
     }
 </style>
 <!-- Topbar Start -->
-<div class="topbar d-none d-md-block" style="background: linear-gradient(120deg, rgba(28, 28, 28, 1) 0%, rgba(28, 28, 28, 1) 27%, rgba(183, 0, 0, 1) 27%, rgba(183, 0, 0, 1) 100%);">
+<div class="topbar d-none d-md-block"
+    style="background: linear-gradient(120deg, rgba(28, 28, 28, 1) 0%, rgba(28, 28, 28, 1) 27%, rgba(183, 0, 0, 1) 27%, rgba(183, 0, 0, 1) 100%);">
     <nav class="navbar navbar-expand-lg py-1" style="padding:0px 0px 0px 5px !important">
         <div class="container-fluid" style="padding:0px 0px !important">
             <div class="logo">
-                <a href="#" class="fs-5 fw-bolder px-0 text-white bg-transparent text-decoration-none text-uppercase">Buddha Group of Institution</a>
+                <a href="#"
+                    class="fs-5 fw-bolder px-0 text-white bg-transparent text-decoration-none text-uppercase">Buddha
+                    Group of Institution</a>
             </div>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -166,7 +353,8 @@
             <div class="col-md-1 px-1">
                 <center>
                     <a href="{{ url('/') }}">
-                        <img src="{{ asset('../Images/logo.png') }}" class="img-fluid w-logo" style="max-height: 80px; width: auto;" />
+                        <img src="{{ asset('images/bit.png') }}" class="img-fluid w-logo"
+                            style="max-height: 100px; width: auto;" />
                     </a>
                 </center>
             </div>
@@ -182,8 +370,9 @@
             </div>
             <div class="col-md-1 px-1">
                 <center>
-                    <a href="#">
-                        <img src="{{ asset('../Images/aktu.png') }}" class="img-fluid w-logo" style="max-height: 80px; width: auto;" />
+                    <a href="https://aktu.ac.in/" target="_blank">
+                        <img src="{{ asset('../Images/aktu.png') }}" class="img-fluid w-logo"
+                            style="max-height: 80px; width: auto;" />
                     </a>
                 </center>
             </div>
@@ -191,14 +380,18 @@
     </div>
 
     <!-- Mobile View -->
-    <div class="container-fluid py-2 d-block d-md-none shadow-sm" style="background-color: #ffffff; position: sticky; top: 0; z-index: 10000; min-height: 65px;">
+    <div class="container-fluid py-2 d-block d-md-none shadow-sm"
+        style="background-color: #ffffff; position: sticky; top: 0; z-index: 10000; min-height: 65px;">
         <div class="row align-items-center px-1 h-100">
             <div class="col-10 pe-0">
                 <a href="{{ url('/') }}" class="d-flex align-items-center text-decoration-none">
-                    <img src="{{ asset('../images/logo.png') }}" class="img-fluid" style="max-height: 42px; width: auto;" />
+                    <img src="{{ asset('images/bit.png') }}" class="img-fluid" style="max-height: 42px; width: auto;" />
                     <div class="ms-2 d-flex flex-column text-start justify-content-center">
-                        <span class="text-danger fw-bold lh-sm mobile-brand-title" style="font-size: 13px; text-transform: uppercase;">Buddha Institute of Technology</span>
-                        <span class="text-muted lh-sm mt-1 mobile-brand-sub" style="font-size: 10px; font-weight: 600; letter-spacing: 0.5px;">GIDA, GKP | CODE-525</span>
+                        <span class="text-danger fw-bold lh-sm mobile-brand-title"
+                            style="font-size: 13px; text-transform: uppercase;">Buddha Institute of Technology</span>
+                        <span class="text-muted lh-sm mt-1 mobile-brand-sub"
+                            style="font-size: 10px; font-weight: 600; letter-spacing: 0.5px;">GIDA, GKP |
+                            CODE-525</span>
                     </div>
                 </a>
             </div>
@@ -210,7 +403,8 @@
 <header id="header" class="d-flex align-items-center py-2" style="padding:0px 0px 0px 5px !important">
     <div class="container-fluid d-flex align-items-center justify-content-between" style="padding:0px 0px !important">
         <div class="logo">
-            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" class="text-decoration-none text-light fs-3 fw-bold" title="Buddha Group of Institutions">BGI</a>
+            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                class="text-decoration-none text-light fs-3 fw-bold" title="Buddha Group of Institutions">BGI</a>
         </div>
         <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
         <nav id="navbar" class="navbar">
@@ -251,31 +445,13 @@
                     </ul>
                 </li>
 
-                <!-- ACADEMICS -->
+                <!-- department-->
                 <li class="dropdown">
-                    <a href="#"><span>Academics</span><i class="bi bi-chevron-down"></i></a>
+                    <a href="#">Department <i class="bi bi-chevron-down"></i></a>
                     <ul>
-                        <li class="dropdown">
-                            <a href="#">Departments <i class="bi bi-chevron-down"></i></a>
-                            <ul>
-                                <li><a href="#">DEPARTMENT OF COMPUTER APPLICATION </a></li>
-                                <li><a href="#">BBA</a></li>
-                                <li><a href="#">MBA</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Academic Calendar </a></li>
-                        <li><a href="#">Evaluation Scheme </a></li>
-                        <li><a href="#">Syllabus</a></li>
-                        <li><a href="#">Issue of Certificate for Passout Students</a></li>
-                        <li class="dropdown">
-                            <a href="#">Student Awards <i class="bi bi-chevron-down"></i></a>
-                            <ul>
-                                <li><a href="#">Academic Award</a></li>
-                                <li><a href="#">Star Award</a></li>
-                                <li><a href="#">Change of Guard Ceremony</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Achievement </a></li>
+                        <li><a href="#">DEPARTMENT OF COMPUTER APPLICATION </a></li>
+                        <li><a href="#">BBA</a></li>
+                        <li><a href="#">MBA</a></li>
                     </ul>
                 </li>
 
@@ -292,9 +468,12 @@
                     </ul>
                 </li>
 
-                <!-- Research & Development -->
+                <!--  Achievement -->
+                <li><a href="#">Achievement </a></li>
+
+                <!-- Research -->
                 <li class="dropdown">
-                    <a href="#"><span>Research & Development</span><i class="bi bi-chevron-down"></i></a>
+                    <a href="#"><span>Research</span><i class="bi bi-chevron-down"></i></a>
                     <ul>
                         <li><a href="#">Professional Membership</a></li>
                         <li><a href="#">College Journal</a></li>
@@ -307,7 +486,7 @@
                 <!-- ACTIVITIES -->
                 <li class="dropdown">
                     <a href="#"><span>Activities</span><i class="bi bi-chevron-down"></i></a>
-                   <ul>
+                    <ul>
                         <li><a href="#">Buddha Sharad Mahotsav </a></li>
                         <li><a href="#">Buddha Spring Festival </a></li>
                         <li><a href="#">Extracurricular </a></li>
@@ -317,7 +496,7 @@
                     </ul>
                 </li>
 
-                <!-- FACILITIES & INFRASTRUCTURE -->
+                <!-- FACILITIES -->
                 <li class="dropdown">
                     <a href="#"><span>Facilities</span><i class="bi bi-chevron-down"></i></a>
                     <ul>
@@ -327,18 +506,10 @@
                         <li><a href="#">Buddha Bazar</a></li>
                         <li><a href="#">Temple Event</a></li>
                         <li><a href="#">ATM</a></li>
-                        <li class="dropdown">
-                            <a href="#">Infrastructure <i class="bi bi-chevron-down"></i></a>
-                             <ul>
-                                <li><a href="#">Computer Labs </a></li>
-                                <li><a href="#">Smart Class Rooms </a></li>
-                                <li><a href="#">Seminar Hall</a></li>
-                             </ul>
-                        </li>
                     </ul>
                 </li>
 
-                <!-- SKILL DEV & PERSONALITY DEV -->
+                <!-- SKILL DEV -->
                 <li class="dropdown">
                     <a href="#"><span>Skill Development</span><i class="bi bi-chevron-down"></i></a>
                     <ul>
@@ -346,13 +517,46 @@
                         <li><a href="#">Leadcon</a></li>
                         <li><a href="#">CCC Certification</a></li>
                         <li><a href="#">Aptitudes & Reasoning</a></li>
-                        <li class="dropdown">
-                            <a href="#">Personality Dev. <i class="bi bi-chevron-down"></i></a>
-                            <ul>
-                                <li><a href="#">Communication SKILL ENHANCEMENT PROGRAM</a></li>
-                                <li><a href="#">English Speaking</a></li>
-                            </ul>
-                        </li>
+                    </ul>
+                </li>
+
+                <!-- ACADEMICS -->
+                <li class="dropdown">
+                    <a href="#"><span>Academics</span><i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="#">Academic Calendar </a></li>
+                        <li><a href="#">Evaluation Scheme </a></li>
+                        <li><a href="#">Syllabus</a></li>
+                        <li><a href="#">Issue of Certificate for Passout Students</a></li>
+                    </ul>
+                </li>
+
+                <!-- Student Awards -->
+                <li class="dropdown">
+                    <a href="#"><span>Student Awards</span><i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="#">Academic Award</a></li>
+                        <li><a href="#">Star Award</a></li>
+                        <li><a href="#">Change of Guard Ceremony</a></li>
+                    </ul>
+                </li>
+
+                <!-- Personality Development -->
+                <li class="dropdown">
+                    <a href="#"><span>Personality Development</span><i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="#">Communication SKILL ENHANCEMENT PROGRAM</a></li>
+                        <li><a href="#">English Speaking</a></li>
+                    </ul>
+                </li>
+
+                <!-- Infrastructure -->
+                <li class="dropdown">
+                    <a href="#"><span>Infrastructure</span><i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="#">Computer Labs </a></li>
+                        <li><a href="#">Smart Class Rooms </a></li>
+                        <li><a href="#">Seminar Hall</a></li>
                     </ul>
                 </li>
 
@@ -363,18 +567,22 @@
 </header>
 
 <div class=" container-fluid bg-dark pt-2">
-    <marquee id="m5" behavior="ALTERNATE" scrollamount="3" scrolldelay="0" scrollspeed="300" onmouseout="this.start();" onmouseover="this.stop();" style="border-width: 0px; border-style: solid; width: 100%;" class="p-0 m-0">
+    <marquee id="m5" behavior="ALTERNATE" scrollamount="3" scrolldelay="0" scrollspeed="300" onmouseout="this.start();"
+        onmouseover="this.stop();" style="border-width: 0px; border-style: solid; width: 100%;" class="p-0 m-0">
         <img id="Repeater_scroll_Image1_2" src="{{ asset('../Images/new.gif') }}" style="height:7px;width:22px;" />
         &nbsp;
-        <a id="Repeater_scroll_HyperLink1_0" class="w-txt-14 text-white me-5 text-decoration-none" href="#">DATA OF ADMISSION OF VACANT SEAT 2025-26</a>
-        <a id="Repeater_scroll_HyperLink1_0" class="w-txt-14 text-white me-5 text-decoration-none" href="#">EOA 2025-26</a>
-        <a id="Repeater_scroll_HyperLink1_0" class="w-txt-14 text-white me-5 text-decoration-none" href="#">AKTU Affiliation Letter 2025-26</a>
+        <a id="Repeater_scroll_HyperLink1_0" class="w-txt-14 text-white me-5 text-decoration-none" href="#">DATA OF
+            ADMISSION OF VACANT SEAT 2025-26</a>
+        <a id="Repeater_scroll_HyperLink1_0" class="w-txt-14 text-white me-5 text-decoration-none" href="#">EOA
+            2025-26</a>
+        <a id="Repeater_scroll_HyperLink1_0" class="w-txt-14 text-white me-5 text-decoration-none" href="#">AKTU
+            Affiliation Letter 2025-26</a>
     </marquee>
 </div>
 
 <!-- Scripts -->
 <script>
-    (function() {
+    (function () {
         "use strict";
 
         const select = (el, all = false) =>
@@ -403,7 +611,7 @@
         window.addEventListener("load", headerFixed);
         onscroll(document, headerFixed);
 
-        on("click", ".mobile-nav-toggle", function() {
+        on("click", ".mobile-nav-toggle", function () {
             select("#navbar").classList.toggle("navbar-mobile");
             this.classList.toggle("bi-list");
             this.classList.toggle("bi-x");
@@ -412,7 +620,7 @@
         on(
             "click",
             ".navbar .dropdown > a, .navbar .dropdown .dropdown > a",
-            function(e) {
+            function (e) {
                 if (select("#navbar").classList.contains("navbar-mobile")) {
                     e.preventDefault();
                     const submenu = this.nextElementSibling;
@@ -447,7 +655,7 @@
         on(
             "mouseenter",
             ".navbar .dropdown",
-            function() {
+            function () {
                 const submenu = this.querySelector("ul");
                 if (submenu) {
                     const rect = submenu.getBoundingClientRect();
@@ -462,7 +670,7 @@
             },
             true
         );
-        window.addEventListener("scroll", function() {
+        window.addEventListener("scroll", function () {
             var mobileNavToggle = document.querySelector(".mobile-nav-toggle");
             if (window.scrollY > 0) {
                 mobileNavToggle.style.marginTop = "8px";

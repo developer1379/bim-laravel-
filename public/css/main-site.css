@@ -1609,15 +1609,18 @@ body {
 
 /* Responsive Desktop & Mobile Styles */
 @media (max-width: 1450px) {
-    .navbar a { padding: 8px 6px; font-size: 11.5px; }
-    .navbar a i { margin-left: 2px; font-size: 10px; }
+    .navbar a { padding: 8px 4px; font-size: 10.2px; letter-spacing: -0.2px; }
+    .navbar a i { margin-left: 1px; font-size: 8px; }
 }
-@media (max-width: 1250px) {
-    .navbar a { padding: 8px 4px; font-size: 10.5px; }
-    .navbar a i { margin-left: 1px; font-size: 9px; }
+@media (max-width: 1366px) {
+    .navbar a { padding: 8px 3px; font-size: 9.5px; letter-spacing: -0.3px; }
+    .navbar a i.bi-chevron-down { display: none !important; } /* Target only the chevrons, keeping the home icon visible */
 }
-@media (max-width: 1100px) {
-    .navbar a { padding: 8px 3px; font-size: 9.5px; }
+@media (max-width: 1200px) {
+    .navbar a { padding: 8px 2px; font-size: 8.8px; letter-spacing: -0.4px; }
+}
+@media (max-width: 1080px) {
+    .navbar a { padding: 8px 1.5px; font-size: 8.2px; letter-spacing: -0.5px; }
 }
 @media (max-width: 991px) {
     #header { display: none !important; }
@@ -1717,4 +1720,151 @@ body {
     .w-head h6 { font-size: 0.8rem; }
     .w-logo { max-width: 90px; }
 }
+
+/* =========================================
+   SOCIAL MEDIA SECTION STYLES
+   ========================================= */
+.social-media-feed-section {
+    font-family: 'Poppins', sans-serif;
+}
+
+.social-feed-card {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    padding: 1.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.social-feed-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.social-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.profile-img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 2px solid rgba(0,0,0,0.05);
+}
+
+.profile-name {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.verified-badge {
+    color: #0095f6;
+    font-size: 0.9rem;
+}
+
+.post-time {
+    font-size: 0.75rem;
+    color: #64748b;
+}
+
+.social-platform-icon {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.facebook-card .social-platform-icon { color: #1877f2; }
+.instagram-card .social-platform-icon { color: #e1306c; }
+.linkedin-card .social-platform-icon { color: #0a66c2; }
+
+.social-feed-card:hover .social-platform-icon {
+    transform: scale(1.2) rotate(8deg);
+}
+
+.social-card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-text {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: #334155;
+    margin-bottom: 1rem;
+}
+
+.post-image-wrapper {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-top: auto;
+}
+
+.post-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.social-feed-card:hover .post-image {
+    transform: scale(1.05);
+}
+
+.social-card-footer {
+    margin-top: 1.25rem;
+}
+
+.interactions {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #64748b;
+    font-weight: 600;
+}
+
+.view-post-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #cc1616;
+    transition: color 0.2s;
+}
+
+.view-post-btn:hover {
+    color: #991b1b;
+}
+
+.follow-us-bar a {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.follow-us-bar a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
 
