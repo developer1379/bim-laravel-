@@ -264,21 +264,21 @@
 
 <!-- Placement Coordinators Team -->
 <section class="placement-team-section container mb-5">
-    <h3 class="text-center section-title" data-aos="fade-up">Placement Leadership & Team</h3>
+    <h3 class="text-center section-title" data-aos="fade-up">Placement Leadership &amp; Team</h3>
     
     <!-- Leadership / Head Card -->
     <div class="row justify-content-center mb-5" data-aos="fade-up" data-aos-delay="100">
         <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="card coordinator-card head-card text-center p-4">
                 <div class="img-container">
-                    <img src="{{ asset('images/h_p.jpeg') }}" alt="Mr. Amitesh Mani Tripathi" onerror="this.src='https://placehold.co/200x200/cc1616/ffffff?text=AMT'">
+                    <img src="{{ asset('images/bit_placment_cell/bit_hp.png') }}" alt="Mr. Shashank Kumar Srivastav" onerror="this.src='https://placehold.co/200x200/cc1616/ffffff?text=SKS'">
                 </div>
                 <div class="card-body p-2">
-                    <span class="role-badge">Placement Head</span>
-                    <h5 class="fw-bold text-dark mb-1">Mr. Amitesh Mani Tripathi</h5>
-                    <p class="text-muted mb-2 fw-semibold">Head Placement & Placement Coordinator (MBA)</p>
+                    <span class="role-badge">Head Placement</span>
+                    <h5 class="fw-bold text-dark mb-1">Mr. Shashank Kumar Srivastav</h5>
+                    <p class="text-muted mb-2 fw-semibold">Head Placement &amp; Placement Coordinator CS</p>
                     <div class="social-links-wrapper">
-                        <a href="mailto:placement@example.com" class="social-icon-btn" title="Email"><i class="bi bi-envelope-fill"></i></a>
+                        <a href="mailto:placement@bit.ac.in" class="social-icon-btn" title="Email"><i class="bi bi-envelope-fill"></i></a>
                         <a href="#" class="social-icon-btn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
                         <a href="#" class="social-icon-btn" title="Phone"><i class="bi bi-telephone-fill"></i></a>
                     </div>
@@ -290,38 +290,144 @@
     <!-- Coordinators Grid -->
     <div class="row justify-content-center g-4" data-aos="fade-up" data-aos-delay="200">
         <!-- Coordinator 1 -->
-        <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="card coordinator-card text-center p-4">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="card coordinator-card text-center p-4 h-100">
                 <div class="img-container">
-                    <img src="{{ asset('images/abhay.png') }}" alt="Mr. Abhay Upadhayay" onerror="this.src='https://placehold.co/200x200/cc1616/ffffff?text=AU'">
+                    <img src="{{ asset('images/bit_placment_cell/pccse.png') }}" alt="Ms. Chaynika Srivastava" onerror="this.src='https://placehold.co/200x200/cc1616/ffffff?text=CS'">
                 </div>
                 <div class="card-body p-2">
-                    <span class="role-badge">BBA Coordinator</span>
-                    <h5 class="fw-bold text-dark mb-1">Mr. Abhay Upadhayay</h5>
-                    <p class="text-muted mb-2 fw-semibold">Placement Coordinator (BBA)</p>
+                    <span class="role-badge">CSE Coordinator</span>
+                    <h5 class="fw-bold text-dark mb-1 fs-6">Ms. Chaynika Srivastava</h5>
+                    <p class="text-muted mb-2 small fw-semibold">Placement Coordinator CSE</p>
                     <div class="social-links-wrapper">
-                        <a href="mailto:placement@example.com" class="social-icon-btn" title="Email"><i class="bi bi-envelope-fill"></i></a>
+                        <a href="#" class="social-icon-btn" title="Email"><i class="bi bi-envelope-fill"></i></a>
                         <a href="#" class="social-icon-btn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                        <a href="#" class="social-icon-btn" title="Phone"><i class="bi bi-telephone-fill"></i></a>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Coordinator 2 -->
-        <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="card coordinator-card text-center p-4">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="card coordinator-card text-center p-4 h-100">
                 <div class="img-container">
-                    <img src="{{ asset('images/shrey.jpeg') }}" alt="Mr. Shrey Srivastava" onerror="this.src='https://placehold.co/200x200/cc1616/ffffff?text=SS'">
+                    <img src="{{ asset('images/bit_placment_cell/pccse_1.png') }}" alt="Mr. Prashant Chaturvedi" onerror="this.src='https://placehold.co/200x200/cc1616/ffffff?text=PC'">
                 </div>
                 <div class="card-body p-2">
-                    <span class="role-badge">MCA / Computer App Coordinator</span>
-                    <h5 class="fw-bold text-dark mb-1">Mr. Shrey Srivastava</h5>
-                    <p class="text-muted mb-2 fw-semibold">Placement Coordinator Computer Application</p>
+                    <span class="role-badge">CSE Coordinator</span>
+                    <h5 class="fw-bold text-dark mb-1 fs-6">Mr. Prashant Chaturvedi</h5>
+                    <p class="text-muted mb-2 small fw-semibold">Placement Coordinator CSE</p>
                     <div class="social-links-wrapper">
-                        <a href="mailto:placement@example.com" class="social-icon-btn" title="Email"><i class="bi bi-envelope-fill"></i></a>
+                        <a href="#" class="social-icon-btn" title="Email"><i class="bi bi-envelope-fill"></i></a>
                         <a href="#" class="social-icon-btn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                        <a href="#" class="social-icon-btn" title="Phone"><i class="bi bi-telephone-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coordinator 3 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="card coordinator-card text-center p-4 h-100">
+                <div class="img-container">
+                    <img src="{{ asset('images/bit_placment_cell/pccseaiml.png') }}" alt="Mr. Krishna Jaiswal" onerror="this.src='https://placehold.co/200x200/cc1616/ffffff?text=KJ'">
+                </div>
+                <div class="card-body p-2">
+                    <span class="role-badge">CSE(AIML) Coordinator</span>
+                    <h5 class="fw-bold text-dark mb-1 fs-6">Mr. Krishna Jaiswal</h5>
+                    <p class="text-muted mb-2 small fw-semibold">Placement Coordinator CSE(AIML)</p>
+                    <div class="social-links-wrapper">
+                        <a href="#" class="social-icon-btn" title="Email"><i class="bi bi-envelope-fill"></i></a>
+                        <a href="#" class="social-icon-btn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coordinator 4 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="card coordinator-card text-center p-4 h-100">
+                <div class="img-container">
+                    <img src="{{ asset('images/bit_placment_cell/pccseaiml_1.png') }}" alt="Ms. Anjum Ahehsan" onerror="this.src='https://placehold.co/200x200/cc1616/ffffff?text=AA'">
+                </div>
+                <div class="card-body p-2">
+                    <span class="role-badge">CSE(AIML) Coordinator</span>
+                    <h5 class="fw-bold text-dark mb-1 fs-6">Ms. Anjum Ahehsan</h5>
+                    <p class="text-muted mb-2 small fw-semibold">Placement Coordinator CSE(AIML)</p>
+                    <div class="social-links-wrapper">
+                        <a href="#" class="social-icon-btn" title="Email"><i class="bi bi-envelope-fill"></i></a>
+                        <a href="#" class="social-icon-btn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coordinator 5 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="card coordinator-card text-center p-4 h-100">
+                <div class="img-container">
+                    <img src="{{ asset('images/bit_placment_cell/pcit.png') }}" alt="Mr. Javed Khan" onerror="this.src='https://placehold.co/200x200/cc1616/ffffff?text=JK'">
+                </div>
+                <div class="card-body p-2">
+                    <span class="role-badge">IT Coordinator</span>
+                    <h5 class="fw-bold text-dark mb-1 fs-6">Mr. Javed Khan</h5>
+                    <p class="text-muted mb-2 small fw-semibold">Placement Coordinator IT</p>
+                    <div class="social-links-wrapper">
+                        <a href="#" class="social-icon-btn" title="Email"><i class="bi bi-envelope-fill"></i></a>
+                        <a href="#" class="social-icon-btn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coordinator 6 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="card coordinator-card text-center p-4 h-100">
+                <div class="img-container">
+                    <img src="{{ asset('images/bit_placment_cell/pcce.png') }}" alt="Mr. Arun Kumar" onerror="this.src='https://placehold.co/200x200/cc1616/ffffff?text=AK'">
+                </div>
+                <div class="card-body p-2">
+                    <span class="role-badge">CE Coordinator</span>
+                    <h5 class="fw-bold text-dark mb-1 fs-6">Mr. Arun Kumar</h5>
+                    <p class="text-muted mb-2 small fw-semibold">Placement Coordinator CE</p>
+                    <div class="social-links-wrapper">
+                        <a href="#" class="social-icon-btn" title="Email"><i class="bi bi-envelope-fill"></i></a>
+                        <a href="#" class="social-icon-btn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coordinator 7 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="card coordinator-card text-center p-4 h-100">
+                <div class="img-container">
+                    <img src="{{ asset('images/bit_placment_cell/pcme.png') }}" alt="Md. Qaiser" onerror="this.src='https://placehold.co/200x200/cc1616/ffffff?text=MQ'">
+                </div>
+                <div class="card-body p-2">
+                    <span class="role-badge">ME Coordinator</span>
+                    <h5 class="fw-bold text-dark mb-1 fs-6">Md. Qaiser</h5>
+                    <p class="text-muted mb-2 small fw-semibold">Placement Coordinator ME</p>
+                    <div class="social-links-wrapper">
+                        <a href="#" class="social-icon-btn" title="Email"><i class="bi bi-envelope-fill"></i></a>
+                        <a href="#" class="social-icon-btn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coordinator 8 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="card coordinator-card text-center p-4 h-100">
+                <div class="img-container">
+                    <img src="{{ asset('images/bit_placment_cell/pcece.png') }}" alt="Mr. Arun Kumar Mishra" onerror="this.src='https://placehold.co/200x200/cc1616/ffffff?text=AKM'">
+                </div>
+                <div class="card-body p-2">
+                    <span class="role-badge">ECE Coordinator</span>
+                    <h5 class="fw-bold text-dark mb-1 fs-6">Mr. Arun Kumar Mishra</h5>
+                    <p class="text-muted mb-2 small fw-semibold">Placement Coordinator ECE</p>
+                    <div class="social-links-wrapper">
+                        <a href="#" class="social-icon-btn" title="Email"><i class="bi bi-envelope-fill"></i></a>
+                        <a href="#" class="social-icon-btn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
             </div>

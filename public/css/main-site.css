@@ -1668,8 +1668,7 @@ body {
 
 .navbar>ul>li>a:hover,
 .navbar>ul>li>.active {
-    background: #0d233a;
-    /* Darker theme blue */
+    background: #cc1616;
     color: #ffffff;
 }
 
@@ -1688,7 +1687,7 @@ body {
     border-radius: 0;
     z-index: 999;
     min-width: 260px;
-    border-top: 3px solid #173b5e;
+    border-top: 3px solid #cc1616;
 }
 
 .navbar .dropdown:hover>ul {
@@ -1716,7 +1715,7 @@ body {
 }
 
 .navbar .dropdown ul a:hover {
-    background: #173b5e;
+    background: #cc1616;
     color: #ffffff;
     padding-left: 16px;
 }

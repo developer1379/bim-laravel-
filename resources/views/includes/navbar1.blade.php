@@ -160,9 +160,38 @@
                 <li class="dropdown">
                     <a href="#">Department <i class="bi bi-chevron-down"></i></a>
                     <ul>
-                        <li><a href="#">DEPARTMENT OF COMPUTER APPLICATION </a></li>
-                        <li><a href="#">BBA</a></li>
-                        <li><a href="#">MBA</a></li>
+                        <li class="dropdown">
+                            <a href="#"><span>Applied Sciences and Humanities</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="#">ASH -1</a></li>
+                                <li><a href="#">ASH-2</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#"><span>Computer Science Engineering & Allied</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="#">AIML</a></li>
+                                <li><a href="{{ url('/cse') }}">CSE</a></li>
+                                <li><a href="#">CSIT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ url('/ec') }}">ECE & VLSI</a></li>
+                        <li><a href="{{ url('/civil') }}">Civil Engineering</a></li>
+                        <li><a href="{{ url('/me') }}">Mechanical Engineering</a></li>
+                        <li class="dropdown">
+                            <a href="#"><span>Computer Applications</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="{{ url('/bca') }}">BCA</a></li>
+                                <li><a href="{{ url('/mca') }}">MCA</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#"><span>Business Administration</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="{{ url('/bba') }}">BBA</a></li>
+                                <li><a href="{{ url('/mba') }}">MBA</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
 

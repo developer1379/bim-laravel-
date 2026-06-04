@@ -186,7 +186,7 @@
 <section class="about-hero">
     <div class="container">
         <h1>About the Institution</h1>
-        <p>Empowering the next generation of leaders through excellence in management, innovation, and technical education.</p>
+        <p>Empowering the next generation of engineers and technocrats through excellence in technical education, research, and innovation.</p>
     </div>
 </section>
 
@@ -198,70 +198,74 @@
             <!-- Text Content -->
             <div class="col-lg-6">
                 <div class="about-text-content">
-                    <h2>Welcome to BIM</h2>
+                    <h2>Welcome to BIT</h2>
+                    <h5 class="text-danger mb-3 fw-bold">BIT : YOUR GATEWAY TO THE PROFESSIONAL WORLD !!</h5>
                     <p>
-                        <strong>Buddha Institute of Management (BIM)</strong> is a premier institution dedicated to excellence in management and technical education. Established with the vision of nurturing competent professionals and responsible citizens, we have consistently focused on delivering quality education, innovation, and industry-oriented learning.
+                        <strong>Buddha Institute of Technology (BIT)</strong> is an AICTE approved and AKTU affiliated premier engineering institution committed to providing quality technical education. Established with a vision to create competent engineers and technocrats, the institute has been consistently delivering excellence in education, research, and innovation.
                     </p>
                     <p>
-                        The institution aims to bridge the gap between academic knowledge and real-world application through a structured and dynamic learning ecosystem. Our modern approach prepares students to face global challenges with confidence.
+                        The institute is approved by the All India Council for Technical Education (AICTE), New Delhi, and is affiliated to Dr. A.P.J. Abdul Kalam Technical University (AKTU), Lucknow. BIT offers undergraduate programs in various disciplines of engineering including Computer Science &amp; Engineering, Electronics &amp; Communication Engineering, Mechanical Engineering, and Civil Engineering. All programs are designed to meet industry requirements and international standards.
+                    </p>
+                    <p>
+                        Located in a serene and pollution-free environment, the institute campus is spread over acres of land with state-of-the-art infrastructure. The campus provides an ideal atmosphere for learning and overall personality development. The institute is well-connected by road and rail, making it easily accessible from major cities.
                     </p>
                 </div>
             </div>
 
             <!-- Image Content -->
             <div class="col-lg-6">
-                <div class="about-image-wrapper">
-                    <!-- Using a placeholder or existing image from the server -->
-                    <img src="{{ asset('images/bba_events/pic2.jpg') }}" alt="BIM Campus" />
+                <div class="about-image-wrapper mb-4">
+                    <img src="{{ asset('images/bba_events/pic2.jpg') }}" alt="BIT Campus" />
+                </div>
+                <div class="about-text-content">
+                    <p>
+                        BIT maintains strong industry interaction through regular industrial visits, internships, and training programs. Leading companies from various sectors visit the campus for recruitment drives. The institute has established collaborations with reputed industries and research organizations to provide students with practical exposure and hands-on experience in their respective fields.
+                    </p>
+                    <p>
+                        The institute boasts well-equipped laboratories with modern equipment and latest technology. Each department has dedicated laboratories for practical training and research activities. The central library houses a vast collection of books, journals, e-resources, and digital materials. Students have access to online databases and research publications to support their academic and research endeavors.
+                    </p>
                 </div>
             </div>
 
         </div>
 
-        <!-- Features Grid (Institutional Profile) -->
-        <div class="features-grid">
-            <!-- Feature 1 -->
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="bi bi-award"></i>
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="about-text-content">
+                    <h3 class="fw-bold mb-4 text-danger">Salient Features :</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-3 d-flex align-items-start"><i class="bi bi-check-circle-fill text-danger me-2 mt-1"></i> Highly qualified and experienced faculty members with expertise in their respective domains</li>
+                                <li class="mb-3 d-flex align-items-start"><i class="bi bi-check-circle-fill text-danger me-2 mt-1"></i> Modern teaching methodology incorporating ICT tools, smart classrooms, and interactive learning</li>
+                                <li class="mb-3 d-flex align-items-start"><i class="bi bi-check-circle-fill text-danger me-2 mt-1"></i> Special emphasis on communication skills, personality development, and soft skills training</li>
+                                <li class="mb-3 d-flex align-items-start"><i class="bi bi-check-circle-fill text-danger me-2 mt-1"></i> Dedicated Training &amp; Placement Cell with excellent placement record in reputed companies</li>
+                                <li class="mb-3 d-flex align-items-start"><i class="bi bi-check-circle-fill text-danger me-2 mt-1"></i> Regular industry exposure through industrial visits, internships, and expert lectures</li>
+                                <li class="mb-3 d-flex align-items-start"><i class="bi bi-check-circle-fill text-danger me-2 mt-1"></i> Well-equipped laboratories with latest equipment and technology for practical training</li>
+                                <li class="mb-3 d-flex align-items-start"><i class="bi bi-check-circle-fill text-danger me-2 mt-1"></i> Regular workshops, seminars, and guest lectures by industry experts and academicians</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-3 d-flex align-items-start"><i class="bi bi-check-circle-fill text-danger me-2 mt-1"></i> Excellent sports facilities and encouragement for extracurricular activities</li>
+                                <li class="mb-3 d-flex align-items-start"><i class="bi bi-check-circle-fill text-danger me-2 mt-1"></i> Central library with extensive collection of books, journals, and e-resources</li>
+                                <li class="mb-3 d-flex align-items-start"><i class="bi bi-check-circle-fill text-danger me-2 mt-1"></i> Separate hostel facilities for boys and girls with all modern amenities</li>
+                                <li class="mb-3 d-flex align-items-start"><i class="bi bi-check-circle-fill text-danger me-2 mt-1"></i> Student welfare schemes including scholarships and financial assistance programs</li>
+                                <li class="mb-3 d-flex align-items-start"><i class="bi bi-check-circle-fill text-danger me-2 mt-1"></i> Innovation and research cell promoting entrepreneurship and research activities</li>
+                                <li class="mb-3 d-flex align-items-start"><i class="bi bi-check-circle-fill text-danger me-2 mt-1"></i> Community development programs and social outreach initiatives</li>
+                                <li class="mb-3 d-flex align-items-start"><i class="bi bi-check-circle-fill text-danger me-2 mt-1"></i> Modern infrastructure including air-conditioned classrooms, auditorium, and conference halls</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <h4>AICTE Approved</h4>
-                <p>Officially approved by the All India Council for Technical Education, New Delhi.</p>
-            </div>
-
-            <!-- Feature 2 -->
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="bi bi-bank"></i>
-                </div>
-                <h4>AKTU Affiliated</h4>
-                <p>Proudly affiliated to Dr. A.P.J. Abdul Kalam Technical University, Lucknow.</p>
-            </div>
-
-            <!-- Feature 3 -->
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="bi bi-laptop"></i>
-                </div>
-                <h4>Modern Infrastructure</h4>
-                <p>Equipped with advanced laboratories, digital facilities, and smart classrooms.</p>
-            </div>
-
-            <!-- Feature 4 -->
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="bi bi-lightbulb"></i>
-                </div>
-                <h4>Innovation Focus</h4>
-                <p>Strong emphasis on management, innovation, and fostering entrepreneurial spirit.</p>
             </div>
         </div>
 
         <!-- Highlight Box -->
         <div class="highlight-box">
             <div class="highlight-text">
-                <h3>Business Simulation & Incubation</h3>
-                <p>BIM houses a cutting-edge Business Simulation Lab and Entrepreneurship Incubation Centre to foster real-world business skills.</p>
+                <h3>Innovation &amp; Technical Research Cell</h3>
+                <p>BIT houses a cutting-edge technical laboratory and Innovation Incubation Centre to promote entrepreneurship and research activities.</p>
             </div>
             <div class="highlight-action">
                 <a href="{{ url('contact') }}" class="btn btn-danger btn-lg px-4 fw-bold" style="border-radius: 8px;">Contact Us</a>

@@ -331,107 +331,107 @@
                             <td class="text-muted"><i class="bi bi-geo-alt me-1"></i> Agrawal Orthopaedic, Jubli Road, Gorakhpur</td>
                         </tr>
                         <!-- Row 3 -->
-                        <tr class="board-row-item" data-search="3 Professor of Institute Prof. Awadhesh Kumar Tiwari M.Com, Ph.D Professor Buddha Institute of Technology, GIDA, Gorakhpur">
+                        <tr class="board-row-item" data-search="3 Professor of Institute Dr. Sudhir Agrawal Ph.D Professor Buddha Institute of Management, GIDA, Gorakhpur">
                             <td class="fw-bold text-secondary">03</td>
                             <td><span class="role-badge badge-edu">Professor of Institute</span></td>
                             <td>
                                 <div class="d-flex align-items-center">
-                                    <div class="avatar-circle avatar-3">AT</div>
-                                    <div class="fw-bold text-dark">Prof. Awadhesh Kumar Tiwari</div>
-                                </div>
-                            </td>
-                            <td><span class="badge bg-light text-dark border px-2 py-1">M.Com, Ph.D</span></td>
-                            <td class="fw-semibold text-secondary"><i class="bi bi-briefcase me-1"></i> Professor</td>
-                            <td class="text-muted"><i class="bi bi-geo-alt me-1"></i> Buddha Institute of Technology, GIDA, Gorakhpur</td>
-                        </tr>
-                        <!-- Row 4 -->
-                        <tr class="board-row-item" data-search="4 Technologist / Educationist to be nominated by society Prof. R.P. Mani M.Sc. Ph.D Professor MMM University of Technology, Gorakhpur">
-                            <td class="fw-bold text-secondary">04</td>
-                            <td><span class="role-badge badge-default">Technologist / Edu</span></td>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <div class="avatar-circle avatar-4">RM</div>
-                                    <div class="fw-bold text-dark">Prof. R.P. Mani</div>
-                                </div>
-                            </td>
-                            <td><span class="badge bg-light text-dark border px-2 py-1">M.Sc., Ph.D</span></td>
-                            <td class="fw-semibold text-secondary"><i class="bi bi-briefcase me-1"></i> Professor</td>
-                            <td class="text-muted"><i class="bi bi-geo-alt me-1"></i> MMM University of Technology, Gorakhpur</td>
-                        </tr>
-                        <!-- Row 5 -->
-                        <tr class="board-row-item" data-search="5 Industrialist/ Educationist to be nominated by society Dr. Arif Mohhamad MBA, Ph.D Industrialist GIDA, Gorakhpur">
-                            <td class="fw-bold text-secondary">05</td>
-                            <td><span class="role-badge badge-default">Industrialist / Edu</span></td>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <div class="avatar-circle avatar-5">AM</div>
-                                    <div class="fw-bold text-dark">Dr. Arif Mohhamad</div>
-                                </div>
-                            </td>
-                            <td><span class="badge bg-light text-dark border px-2 py-1">MBA, Ph.D</span></td>
-                            <td class="fw-semibold text-secondary"><i class="bi bi-building me-1"></i> Industrialist</td>
-                            <td class="text-muted"><i class="bi bi-geo-alt me-1"></i> GIDA, Gorakhpur</td>
-                        </tr>
-                        <!-- Row 6 -->
-                        <tr class="board-row-item" data-search="6 Technologist / Educationist to be nominated by University Prof. Manish Mishra M.Sc. Electronic, Ph.D Professor DDUGU, Gorakhpur">
-                            <td class="fw-bold text-secondary">06</td>
-                            <td><span class="role-badge badge-default">University Nominee</span></td>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <div class="avatar-circle avatar-6">MM</div>
-                                    <div class="fw-bold text-dark">Prof. Manish Mishra</div>
-                                </div>
-                            </td>
-                            <td><span class="badge bg-light text-dark border px-2 py-1">M.Sc. Electronic, Ph.D</span></td>
-                            <td class="fw-semibold text-secondary"><i class="bi bi-briefcase me-1"></i> Professor</td>
-                            <td class="text-muted"><i class="bi bi-geo-alt me-1"></i> DDUGU, Gorakhpur</td>
-                        </tr>
-                        <!-- Row 7 -->
-                        <tr class="board-row-item" data-search="7 Industrialist Educationist nominated by society Dr. Prashant Tripathi MBA, Ph.D Industrialist Radio Mantra Gorakhpur">
-                            <td class="fw-bold text-secondary">07</td>
-                            <td><span class="role-badge badge-default">Industrialist Nominee</span></td>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <div class="avatar-circle avatar-7">PT</div>
-                                    <div class="fw-bold text-dark">Dr. Prashant Tripathi</div>
-                                </div>
-                            </td>
-                            <td><span class="badge bg-light text-dark border px-2 py-1">MBA, Ph.D</span></td>
-                            <td class="fw-semibold text-secondary"><i class="bi bi-building me-1"></i> Industrialist</td>
-                            <td class="text-muted"><i class="bi bi-geo-alt me-1"></i> Radio Mantra, Gorakhpur</td>
-                        </tr>
-                        <!-- Row 8 -->
-                        <tr class="board-row-item" data-search="8 Assistant Professor of the Institute Mr. Rama Raman Pandey MBA, B.Com, NET Assistant Professor Buddha Institute of Technology, GIDA, Gorakhpur">
-                            <td class="fw-bold text-secondary">08</td>
-                            <td><span class="role-badge badge-edu">Assistant Professor</span></td>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <div class="avatar-circle avatar-8">RP</div>
-                                    <div class="fw-bold text-dark">Mr. Rama Raman Pandey</div>
-                                </div>
-                            </td>
-                            <td><span class="badge bg-light text-dark border px-2 py-1">MBA, B.Com, NET</span></td>
-                            <td class="fw-semibold text-secondary"><i class="bi bi-briefcase me-1"></i> Assistant Professor</td>
-                            <td class="text-muted"><i class="bi bi-geo-alt me-1"></i> Buddha Institute of Technology, GIDA, Gorakhpur</td>
-                        </tr>
-                        <!-- Row 9 -->
-                        <tr class="board-row-item" data-search="9 Nominee of State Govt.(Ex.officio) Prof. Ashwani Ph.D RHEO Gorakhpur Canal Road, Daudpur, Gorakhpur">
-                            <td class="fw-bold text-secondary">09</td>
-                            <td><span class="role-badge badge-member">State Govt. Nominee</span></td>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <div class="avatar-circle avatar-1">AS</div>
-                                    <div class="fw-bold text-dark">Prof. Ashwani</div>
+                                    <div class="avatar-circle avatar-3">SA</div>
+                                    <div class="fw-bold text-dark">Dr. Sudhir Agrawal</div>
                                 </div>
                             </td>
                             <td><span class="badge bg-light text-dark border px-2 py-1">Ph.D</span></td>
-                            <td class="fw-semibold text-secondary"><i class="bi bi-bank me-1"></i> RHEO Gorakhpur</td>
-                            <td class="text-muted"><i class="bi bi-geo-alt me-1"></i> Canal Road, Daudpur, Gorakhpur</td>
+                            <td class="fw-semibold text-secondary"><i class="bi bi-briefcase me-1"></i> Professor</td>
+                            <td class="text-muted"><i class="bi bi-geo-alt me-1"></i> Buddha Institute of Management, GIDA, Gorakhpur</td>
+                        </tr>
+                        <!-- Row 4 -->
+                        <tr class="board-row-item" data-search="4 Technologist / Educationist society nominee Dr. A.K. Agrawal Ph.D Professor IIT BHU">
+                            <td class="fw-bold text-secondary">04</td>
+                            <td><span class="role-badge badge-default">Society Nominee</span></td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div class="avatar-circle avatar-4">AA</div>
+                                    <div class="fw-bold text-dark">Dr. A.K. Agrawal</div>
+                                </div>
+                            </td>
+                            <td><span class="badge bg-light text-dark border px-2 py-1">Ph.D</span></td>
+                            <td class="fw-semibold text-secondary"><i class="bi bi-briefcase me-1"></i> Professor</td>
+                            <td class="text-muted"><i class="bi bi-geo-alt me-1"></i> IIT BHU</td>
+                        </tr>
+                        <!-- Row 5 -->
+                        <tr class="board-row-item" data-search="5 Nominee of AKTU Dr. Govind Pandey Ph.D Professor MMUT Gorakhpur">
+                            <td class="fw-bold text-secondary">05</td>
+                            <td><span class="role-badge badge-default">University Nominee</span></td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div class="avatar-circle avatar-5">GP</div>
+                                    <div class="fw-bold text-dark">Dr. Govind Pandey</div>
+                                </div>
+                            </td>
+                            <td><span class="badge bg-light text-dark border px-2 py-1">Ph.D</span></td>
+                            <td class="fw-semibold text-secondary"><i class="bi bi-briefcase me-1"></i> Professor</td>
+                            <td class="text-muted"><i class="bi bi-geo-alt me-1"></i> M.M.U.T. , Gorakhpur</td>
+                        </tr>
+                        <!-- Row 6 -->
+                        <tr class="board-row-item" data-search="6 Eminent Technologist &amp; Educationist Dr. Mayank Garg Ph.D Director ITS Engineering College Member BOS AKTU Greater NOIDA">
+                            <td class="fw-bold text-secondary">06</td>
+                            <td><span class="role-badge badge-default">Eminent Tech / Edu</span></td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div class="avatar-circle avatar-6">MG</div>
+                                    <div class="fw-bold text-dark">Dr. Mayank Garg</div>
+                                </div>
+                            </td>
+                            <td><span class="badge bg-light text-dark border px-2 py-1">Ph.D</span></td>
+                            <td class="fw-semibold text-secondary"><i class="bi bi-briefcase me-1"></i> Director &amp; Member BOS (AKTU)</td>
+                            <td class="text-muted"><i class="bi bi-geo-alt me-1"></i> ITS Engineering College, Greater NOIDA</td>
+                        </tr>
+                        <!-- Row 7 -->
+                        <tr class="board-row-item" data-search="7 Technologist / Educationist society nominee Dr. R.K. Chauhan Ph.D Professor ECE Department MMUT Gorakhpur">
+                            <td class="fw-bold text-secondary">07</td>
+                            <td><span class="role-badge badge-default">Society Nominee</span></td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div class="avatar-circle avatar-7">RC</div>
+                                    <div class="fw-bold text-dark">Dr. R.K. Chauhan</div>
+                                </div>
+                            </td>
+                            <td><span class="badge bg-light text-dark border px-2 py-1">Ph.D</span></td>
+                            <td class="fw-semibold text-secondary"><i class="bi bi-briefcase me-1"></i> Professor, ECE Dept.</td>
+                            <td class="text-muted"><i class="bi bi-geo-alt me-1"></i> M.M.U.T. , Gorakhpur</td>
+                        </tr>
+                        <!-- Row 8 -->
+                        <tr class="board-row-item" data-search="8 Industrialist Educationist society nominee Mr. Akash Gehlot B.E. Director Vice President IoT Automation Cloud Solutions Mobiloitte Technologies New Delhi">
+                            <td class="fw-bold text-secondary">08</td>
+                            <td><span class="role-badge badge-default">Industrialist Nominee</span></td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div class="avatar-circle avatar-8">AG</div>
+                                    <div class="fw-bold text-dark">Mr. Akash Gehlot</div>
+                                </div>
+                            </td>
+                            <td><span class="badge bg-light text-dark border px-2 py-1">B.E.</span></td>
+                            <td class="fw-semibold text-secondary"><i class="bi bi-building me-1"></i> Director &amp; VP IoT</td>
+                            <td class="text-muted"><i class="bi bi-geo-alt me-1"></i> Mobiloitte Technologies, New Delhi</td>
+                        </tr>
+                        <!-- Row 9 -->
+                        <tr class="board-row-item" data-search="9 Assistant Professor of the Institute Mr. Ankur Kumar M. Tech. Assistant Professor Buddha Institute of Technology GIDA Gorakhpur">
+                            <td class="fw-bold text-secondary">09</td>
+                            <td><span class="role-badge badge-edu">Assistant Professor</span></td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div class="avatar-circle avatar-1">AK</div>
+                                    <div class="fw-bold text-dark">Mr. Ankur Kumar</div>
+                                </div>
+                            </td>
+                            <td><span class="badge bg-light text-dark border px-2 py-1">M. Tech.</span></td>
+                            <td class="fw-semibold text-secondary"><i class="bi bi-briefcase me-1"></i> Assistant Professor</td>
+                            <td class="text-muted"><i class="bi bi-geo-alt me-1"></i> Buddha Institute of Technology, GIDA, Gorakhpur</td>
                         </tr>
                         <!-- Row 10 -->
-                        <tr class="board-row-item" data-search="10 Industrialist/Technologist/ Educationist to be nominated by society Mr. Anil Kumar Yadav M.Com, Ph.D Professor DDU ,GKP University, GKP">
+                        <tr class="board-row-item" data-search="10 Member Secretary Mr. Anil Kumar Yadav M.Com, Ph.D Professor DDU GKP University Gorakhpur">
                             <td class="fw-bold text-secondary">10</td>
-                            <td><span class="role-badge badge-default">Society Nominee</span></td>
+                            <td><span class="role-badge badge-secretary">Member Secretary</span></td>
                             <td>
                                 <div class="d-flex align-items-center">
                                     <div class="avatar-circle avatar-2">AY</div>
@@ -443,17 +443,17 @@
                             <td class="text-muted"><i class="bi bi-geo-alt me-1"></i> DDU GKP University, Gorakhpur</td>
                         </tr>
                         <!-- Row 11 -->
-                        <tr class="board-row-item" data-search="11 Member Secretary Dr. Abishek Kumar Tripathi M.Com, MBA, Ph.D Professor Buddha Institute of Technology, GIDA, Gorakhpur">
+                        <tr class="board-row-item" data-search="11 Member Secretary Dr. Arvind Kumar Pandey Ph. D Professor and Director Buddha Institute of Technology GIDA Gorakhpur">
                             <td class="fw-bold text-secondary">11</td>
                             <td><span class="role-badge badge-secretary">Member Secretary</span></td>
                             <td>
                                 <div class="d-flex align-items-center">
-                                    <div class="avatar-circle avatar-3">AT</div>
-                                    <div class="fw-bold text-dark">Dr. Abhishek Kumar Tripathi</div>
+                                    <div class="avatar-circle avatar-3">AP</div>
+                                    <div class="fw-bold text-dark">Dr. Arvind Kumar Pandey</div>
                                 </div>
                             </td>
-                            <td><span class="badge bg-light text-dark border px-2 py-1">M.Com, MBA, Ph.D</span></td>
-                            <td class="fw-semibold text-secondary"><i class="bi bi-briefcase me-1"></i> Professor</td>
+                            <td><span class="badge bg-light text-dark border px-2 py-1">Ph.D</span></td>
+                            <td class="fw-semibold text-secondary"><i class="bi bi-briefcase me-1"></i> Professor &amp; Director</td>
                             <td class="text-muted"><i class="bi bi-geo-alt me-1"></i> Buddha Institute of Technology, GIDA, Gorakhpur</td>
                         </tr>
                     </tbody>
@@ -515,18 +515,18 @@
         </div>
 
         <!-- Card 3 -->
-        <div class="col-md-6 col-12 board-card-item" data-search="Professor of Institute Prof. Awadhesh Kumar Tiwari M.Com, Ph.D Professor Buddha Institute of Technology, GIDA, Gorakhpur">
+        <div class="col-md-6 col-12 board-card-item" data-search="Professor of Institute Dr. Sudhir Agrawal Ph.D Professor Buddha Institute of Management, GIDA, Gorakhpur">
             <div class="mobile-member-card">
                 <div class="d-flex align-items-center mb-3">
-                    <div class="avatar-circle avatar-3">AT</div>
+                    <div class="avatar-circle avatar-3">SA</div>
                     <div>
-                        <h6 class="fw-bold text-dark mb-1">Prof. Awadhesh Kumar Tiwari</h6>
+                        <h6 class="fw-bold text-dark mb-1">Dr. Sudhir Agrawal</h6>
                         <span class="role-badge badge-edu">Professor of Institute</span>
                     </div>
                 </div>
                 <div class="mobile-card-meta">
                     <i class="bi bi-mortarboard-fill"></i>
-                    <span><strong>Qualification:</strong> M.Com, Ph.D</span>
+                    <span><strong>Qualification:</strong> Ph.D</span>
                 </div>
                 <div class="mobile-card-meta">
                     <i class="bi bi-briefcase-fill"></i>
@@ -534,24 +534,24 @@
                 </div>
                 <div class="mobile-card-meta mb-0 align-items-start">
                     <i class="bi bi-geo-alt-fill mt-1"></i>
-                    <span><strong>Address:</strong> Buddha Institute of Technology, GIDA, Gorakhpur</span>
+                    <span><strong>Address:</strong> Buddha Institute of Management, GIDA, Gorakhpur</span>
                 </div>
             </div>
         </div>
 
         <!-- Card 4 -->
-        <div class="col-md-6 col-12 board-card-item" data-search="Technologist / Educationist to be nominated by society Prof. R.P. Mani M.Sc. Ph.D Professor MMM University of Technology, Gorakhpur">
+        <div class="col-md-6 col-12 board-card-item" data-search="Technologist / Educationist society nominee Dr. A.K. Agrawal Ph.D Professor IIT BHU">
             <div class="mobile-member-card">
                 <div class="d-flex align-items-center mb-3">
-                    <div class="avatar-circle avatar-4">RM</div>
+                    <div class="avatar-circle avatar-4">AA</div>
                     <div>
-                        <h6 class="fw-bold text-dark mb-1">Prof. R.P. Mani</h6>
-                        <span class="role-badge badge-default">Technologist / Edu</span>
+                        <h6 class="fw-bold text-dark mb-1">Dr. A.K. Agrawal</h6>
+                        <span class="role-badge badge-default">Society Nominee</span>
                     </div>
                 </div>
                 <div class="mobile-card-meta">
                     <i class="bi bi-mortarboard-fill"></i>
-                    <span><strong>Qualification:</strong> M.Sc., Ph.D</span>
+                    <span><strong>Qualification:</strong> Ph.D</span>
                 </div>
                 <div class="mobile-card-meta">
                     <i class="bi bi-briefcase-fill"></i>
@@ -559,49 +559,24 @@
                 </div>
                 <div class="mobile-card-meta mb-0 align-items-start">
                     <i class="bi bi-geo-alt-fill mt-1"></i>
-                    <span><strong>Address:</strong> MMM University of Technology, Gorakhpur</span>
+                    <span><strong>Address:</strong> IIT BHU</span>
                 </div>
             </div>
         </div>
 
         <!-- Card 5 -->
-        <div class="col-md-6 col-12 board-card-item" data-search="Industrialist/ Educationist to be nominated by society Dr. Arif Mohhamad MBA, Ph.D Industrialist GIDA, Gorakhpur">
+        <div class="col-md-6 col-12 board-card-item" data-search="Nominee of AKTU Dr. Govind Pandey Ph.D Professor MMUT Gorakhpur">
             <div class="mobile-member-card">
                 <div class="d-flex align-items-center mb-3">
-                    <div class="avatar-circle avatar-5">AM</div>
+                    <div class="avatar-circle avatar-5">GP</div>
                     <div>
-                        <h6 class="fw-bold text-dark mb-1">Dr. Arif Mohhamad</h6>
-                        <span class="role-badge badge-default">Industrialist / Edu</span>
-                    </div>
-                </div>
-                <div class="mobile-card-meta">
-                    <i class="bi bi-mortarboard-fill"></i>
-                    <span><strong>Qualification:</strong> MBA, Ph.D</span>
-                </div>
-                <div class="mobile-card-meta">
-                    <i class="bi bi-building-fill"></i>
-                    <span><strong>Occupation:</strong> Industrialist</span>
-                </div>
-                <div class="mobile-card-meta mb-0 align-items-start">
-                    <i class="bi bi-geo-alt-fill mt-1"></i>
-                    <span><strong>Address:</strong> GIDA, Gorakhpur</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- Card 6 -->
-        <div class="col-md-6 col-12 board-card-item" data-search="Technologist / Educationist to be nominated by University Prof. Manish Mishra M.Sc. Electronic, Ph.D Professor DDUGU, Gorakhpur">
-            <div class="mobile-member-card">
-                <div class="d-flex align-items-center mb-3">
-                    <div class="avatar-circle avatar-6">MM</div>
-                    <div>
-                        <h6 class="fw-bold text-dark mb-1">Prof. Manish Mishra</h6>
+                        <h6 class="fw-bold text-dark mb-1">Dr. Govind Pandey</h6>
                         <span class="role-badge badge-default">University Nominee</span>
                     </div>
                 </div>
                 <div class="mobile-card-meta">
                     <i class="bi bi-mortarboard-fill"></i>
-                    <span><strong>Qualification:</strong> M.Sc. Electronic, Ph.D</span>
+                    <span><strong>Qualification:</strong> Ph.D</span>
                 </div>
                 <div class="mobile-card-meta">
                     <i class="bi bi-briefcase-fill"></i>
@@ -609,49 +584,99 @@
                 </div>
                 <div class="mobile-card-meta mb-0 align-items-start">
                     <i class="bi bi-geo-alt-fill mt-1"></i>
-                    <span><strong>Address:</strong> DDUGU, Gorakhpur</span>
+                    <span><strong>Address:</strong> M.M.U.T. , Gorakhpur</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-md-6 col-12 board-card-item" data-search="Eminent Technologist &amp; Educationist Dr. Mayank Garg Ph.D Director ITS Engineering College Member BOS AKTU Greater NOIDA">
+            <div class="mobile-member-card">
+                <div class="d-flex align-items-center mb-3">
+                    <div class="avatar-circle avatar-6">MG</div>
+                    <div>
+                        <h6 class="fw-bold text-dark mb-1">Dr. Mayank Garg</h6>
+                        <span class="role-badge badge-default">Eminent Tech / Edu</span>
+                    </div>
+                </div>
+                <div class="mobile-card-meta">
+                    <i class="bi bi-mortarboard-fill"></i>
+                    <span><strong>Qualification:</strong> Ph.D</span>
+                </div>
+                <div class="mobile-card-meta">
+                    <i class="bi bi-briefcase-fill"></i>
+                    <span><strong>Occupation:</strong> Director &amp; Member BOS (AKTU)</span>
+                </div>
+                <div class="mobile-card-meta mb-0 align-items-start">
+                    <i class="bi bi-geo-alt-fill mt-1"></i>
+                    <span><strong>Address:</strong> ITS Engineering College, Greater NOIDA</span>
                 </div>
             </div>
         </div>
 
         <!-- Card 7 -->
-        <div class="col-md-6 col-12 board-card-item" data-search="Industrialist Educationist nominated by society Dr. Prashant Tripathi MBA, Ph.D Industrialist Radio Mantra Gorakhpur">
+        <div class="col-md-6 col-12 board-card-item" data-search="Technologist / Educationist society nominee Dr. R.K. Chauhan Ph.D Professor ECE Department MMUT Gorakhpur">
             <div class="mobile-member-card">
                 <div class="d-flex align-items-center mb-3">
-                    <div class="avatar-circle avatar-7">PT</div>
+                    <div class="avatar-circle avatar-7">RC</div>
                     <div>
-                        <h6 class="fw-bold text-dark mb-1">Dr. Prashant Tripathi</h6>
-                        <span class="role-badge badge-default">Industrialist Nominee</span>
+                        <h6 class="fw-bold text-dark mb-1">Dr. R.K. Chauhan</h6>
+                        <span class="role-badge badge-default">Society Nominee</span>
                     </div>
                 </div>
                 <div class="mobile-card-meta">
                     <i class="bi bi-mortarboard-fill"></i>
-                    <span><strong>Qualification:</strong> MBA, Ph.D</span>
+                    <span><strong>Qualification:</strong> Ph.D</span>
                 </div>
                 <div class="mobile-card-meta">
-                    <i class="bi bi-building-fill"></i>
-                    <span><strong>Occupation:</strong> Industrialist</span>
+                    <i class="bi bi-briefcase-fill"></i>
+                    <span><strong>Occupation:</strong> Professor, ECE Dept.</span>
                 </div>
                 <div class="mobile-card-meta mb-0 align-items-start">
                     <i class="bi bi-geo-alt-fill mt-1"></i>
-                    <span><strong>Address:</strong> Radio Mantra, Gorakhpur</span>
+                    <span><strong>Address:</strong> M.M.U.T. , Gorakhpur</span>
                 </div>
             </div>
         </div>
 
         <!-- Card 8 -->
-        <div class="col-md-6 col-12 board-card-item" data-search="Assistant Professor of the Institute Mr. Rama Raman Pandey MBA, B.Com, NET Assistant Professor Buddha Institute of Technology, GIDA, Gorakhpur">
+        <div class="col-md-6 col-12 board-card-item" data-search="Industrialist Educationist society nominee Mr. Akash Gehlot B.E. Director Vice President IoT Automation Cloud Solutions Mobiloitte Technologies New Delhi">
             <div class="mobile-member-card">
                 <div class="d-flex align-items-center mb-3">
-                    <div class="avatar-circle avatar-8">RP</div>
+                    <div class="avatar-circle avatar-8">AG</div>
                     <div>
-                        <h6 class="fw-bold text-dark mb-1">Mr. Rama Raman Pandey</h6>
+                        <h6 class="fw-bold text-dark mb-1">Mr. Akash Gehlot</h6>
+                        <span class="role-badge badge-default">Industrialist Nominee</span>
+                    </div>
+                </div>
+                <div class="mobile-card-meta">
+                    <i class="bi bi-mortarboard-fill"></i>
+                    <span><strong>Qualification:</strong> B.E.</span>
+                </div>
+                <div class="mobile-card-meta">
+                    <i class="bi bi-building-fill"></i>
+                    <span><strong>Occupation:</strong> Director &amp; VP IoT</span>
+                </div>
+                <div class="mobile-card-meta mb-0 align-items-start">
+                    <i class="bi bi-geo-alt-fill mt-1"></i>
+                    <span><strong>Address:</strong> Mobiloitte Technologies, New Delhi</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="col-md-6 col-12 board-card-item" data-search="Assistant Professor of the Institute Mr. Ankur Kumar M. Tech. Assistant Professor Buddha Institute of Technology GIDA Gorakhpur">
+            <div class="mobile-member-card">
+                <div class="d-flex align-items-center mb-3">
+                    <div class="avatar-circle avatar-1">AK</div>
+                    <div>
+                        <h6 class="fw-bold text-dark mb-1">Mr. Ankur Kumar</h6>
                         <span class="role-badge badge-edu">Assistant Professor</span>
                     </div>
                 </div>
                 <div class="mobile-card-meta">
                     <i class="bi bi-mortarboard-fill"></i>
-                    <span><strong>Qualification:</strong> MBA, B.Com, NET</span>
+                    <span><strong>Qualification:</strong> M. Tech.</span>
                 </div>
                 <div class="mobile-card-meta">
                     <i class="bi bi-briefcase-fill"></i>
@@ -664,39 +689,14 @@
             </div>
         </div>
 
-        <!-- Card 9 -->
-        <div class="col-md-6 col-12 board-card-item" data-search="Nominee of State Govt.(Ex.officio) Prof. Ashwani Ph.D RHEO Gorakhpur Canal Road, Daudpur, Gorakhpur">
-            <div class="mobile-member-card">
-                <div class="d-flex align-items-center mb-3">
-                    <div class="avatar-circle avatar-1">AS</div>
-                    <div>
-                        <h6 class="fw-bold text-dark mb-1">Prof. Ashwani</h6>
-                        <span class="role-badge badge-member">State Govt. Nominee</span>
-                    </div>
-                </div>
-                <div class="mobile-card-meta">
-                    <i class="bi bi-mortarboard-fill"></i>
-                    <span><strong>Qualification:</strong> Ph.D</span>
-                </div>
-                <div class="mobile-card-meta">
-                    <i class="bi bi-bank-fill"></i>
-                    <span><strong>Occupation:</strong> RHEO Gorakhpur</span>
-                </div>
-                <div class="mobile-card-meta mb-0 align-items-start">
-                    <i class="bi bi-geo-alt-fill mt-1"></i>
-                    <span><strong>Address:</strong> Canal Road, Daudpur, Gorakhpur</span>
-                </div>
-            </div>
-        </div>
-
         <!-- Card 10 -->
-        <div class="col-md-6 col-12 board-card-item" data-search="Industrialist/Technologist/ Educationist to be nominated by society Mr. Anil Kumar Yadav M.Com, Ph.D Professor DDU ,GKP University, GKP">
+        <div class="col-md-6 col-12 board-card-item" data-search="Member Secretary Mr. Anil Kumar Yadav M.Com, Ph.D Professor DDU GKP University Gorakhpur">
             <div class="mobile-member-card">
                 <div class="d-flex align-items-center mb-3">
                     <div class="avatar-circle avatar-2">AY</div>
                     <div>
                         <h6 class="fw-bold text-dark mb-1">Mr. Anil Kumar Yadav</h6>
-                        <span class="role-badge badge-default">Society Nominee</span>
+                        <span class="role-badge badge-secretary">Member Secretary</span>
                     </div>
                 </div>
                 <div class="mobile-card-meta">
@@ -715,22 +715,22 @@
         </div>
 
         <!-- Card 11 -->
-        <div class="col-md-6 col-12 board-card-item" data-search="Member Secretary Dr. Abishek Kumar Tripathi M.Com, MBA, Ph.D Professor Buddha Institute of Technology, GIDA, Gorakhpur">
+        <div class="col-md-6 col-12 board-card-item" data-search="Member Secretary Dr. Arvind Kumar Pandey Ph. D Professor and Director Buddha Institute of Technology GIDA Gorakhpur">
             <div class="mobile-member-card">
                 <div class="d-flex align-items-center mb-3">
-                    <div class="avatar-circle avatar-3">AT</div>
+                    <div class="avatar-circle avatar-3">AP</div>
                     <div>
-                        <h6 class="fw-bold text-dark mb-1">Dr. Abhishek Kumar Tripathi</h6>
+                        <h6 class="fw-bold text-dark mb-1">Dr. Arvind Kumar Pandey</h6>
                         <span class="role-badge badge-secretary">Member Secretary</span>
                     </div>
                 </div>
                 <div class="mobile-card-meta">
                     <i class="bi bi-mortarboard-fill"></i>
-                    <span><strong>Qualification:</strong> M.Com, MBA, Ph.D</span>
+                    <span><strong>Qualification:</strong> Ph.D</span>
                 </div>
                 <div class="mobile-card-meta">
                     <i class="bi bi-briefcase-fill"></i>
-                    <span><strong>Occupation:</strong> Professor</span>
+                    <span><strong>Occupation:</strong> Professor &amp; Director</span>
                 </div>
                 <div class="mobile-card-meta mb-0 align-items-start">
                     <i class="bi bi-geo-alt-fill mt-1"></i>

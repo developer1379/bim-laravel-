@@ -73,8 +73,8 @@
 
   <div class="text-center mt-5 py-4" style="background-color: #020617; border-top: 1px solid rgba(255,255,255,0.05);">
     <p style="margin: 0; font-size: 0.9rem; color: #64748b;">
-        &copy; 2024 Copyright <span class="d-none d-sm-inline mx-2">|</span> <br class="d-block d-sm-none">
-        <a target="_blank" href="https://bit.ac.in/" style="color: #ef4444; text-decoration: none; font-weight: 600;">Official Website of Buddha Institute of Management</a>
+        &copy; 2026 Copyright <span class="d-none d-sm-inline mx-2">|</span> <br class="d-block d-sm-none">
+        <a target="_blank" href="https://bit.ac.in/" style="color: #ef4444; text-decoration: none; font-weight: 600;">Official Website of Buddha Institute of Technology</a>
     </p>
   </div>
 </footer>
