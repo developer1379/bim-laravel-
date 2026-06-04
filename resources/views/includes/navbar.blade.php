@@ -15,14 +15,29 @@
         box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
     }
     .navbar { padding: 0; }
-    .navbar ul { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; text-transform: uppercase; }
+    .navbar ul { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: nowrap !important; text-transform: uppercase; }
     .navbar a {
         display: flex; align-items: center; justify-content: space-between;
         padding: 16px 10px; font-size: 13px; font-weight: 600; letter-spacing: 0.5px;
         color: rgba(255, 255, 255, 0.9); text-decoration: none; transition: all 0.3s ease;
+        white-space: nowrap !important;
     }
     .navbar a i { margin-left: 4px; font-size: 12px; }
     .navbar a:hover, .navbar .active { color: #ffffff; background: rgba(255,255,255,0.1); border-radius: 6px; }
+
+    /* Prevent wrapping of navbar elements and enforce single line desktop view */
+    @media (max-width: 1400px) {
+        .navbar a {
+            font-size: 11px !important;
+            padding: 10px 5px !important;
+        }
+    }
+    @media (max-width: 1200px) {
+        .navbar a {
+            font-size: 10px !important;
+            padding: 10px 3px !important;
+        }
+    }
 
     /* Dropdown CSS */
     .navbar .dropdown ul {
@@ -129,7 +144,7 @@
                         <ul></ul>
                     </li>
                     <li class="dropdown dropdown-lg" data-for="5">
-                        <a href="#"><span>BIM JOURNAL</span> </a>
+                        <a href="#"><span>BIT JOURNAL</span> </a>
                         <ul></ul>
                     </li>
                     <li class="dropdown dropdown-lg" data-for="5">
@@ -157,12 +172,12 @@
             </div>
             <div class="col-md-10 text-center w-head fw-bolder">
                 <h3 class="w-tsh text-danger fw-bold mb-1" style="font-size: 1.6rem; letter-spacing: 0.5px;">
-                    BUDDHA INSTITUTE OF MANAGEMENT, GIDA, GORAKHPUR
+                    BUDDHA INSTITUTE OF TECHNOLOGY, GIDA, GORAKHPUR
                 </h3>
                 <p class="text-muted mb-0" style="font-size: 0.9rem; font-weight: 500;">
                     Approved by AICTE, New Delhi & Affiliated to Dr. A.P.J. Abdul
                     Kalam Technical University, Lucknow, Uttar Pradesh
-                    <span class="bg-warning px-2 text-dark">College Code - 1212</span>
+                    <span class="bg-warning px-2 text-dark">College Code - 525</span>
                 </p>
             </div>
             <div class="col-md-1 px-1">
@@ -182,8 +197,8 @@
                 <a href="{{ url('/') }}" class="d-flex align-items-center text-decoration-none">
                     <img src="{{ asset('../images/logo.png') }}" class="img-fluid" style="max-height: 42px; width: auto;" />
                     <div class="ms-2 d-flex flex-column text-start justify-content-center">
-                        <span class="text-danger fw-bold lh-sm mobile-brand-title" style="font-size: 13px; text-transform: uppercase;">Buddha Institute of Management</span>
-                        <span class="text-muted lh-sm mt-1 mobile-brand-sub" style="font-size: 10px; font-weight: 600; letter-spacing: 0.5px;">GIDA, GKP | CODE-1212</span>
+                        <span class="text-danger fw-bold lh-sm mobile-brand-title" style="font-size: 13px; text-transform: uppercase;">Buddha Institute of Technology</span>
+                        <span class="text-muted lh-sm mt-1 mobile-brand-sub" style="font-size: 10px; font-weight: 600; letter-spacing: 0.5px;">GIDA, GKP | CODE-525</span>
                     </div>
                 </a>
             </div>
@@ -240,112 +255,27 @@
                 <li class="dropdown">
                     <a href="#"><span>Academics</span><i class="bi bi-chevron-down"></i></a>
                     <ul>
-                        <li><a href="#">Programmes</a></li>
                         <li class="dropdown">
-                            <a href="#">Departments<i class="bi bi-chevron-down"></i></a>
+                            <a href="#">Departments <i class="bi bi-chevron-down"></i></a>
                             <ul>
-                                <li><a href="#">MBA</a></li>
-                                <li><a href="#">MCA</a></li>
+                                <li><a href="#">DEPARTMENT OF COMPUTER APPLICATION </a></li>
                                 <li><a href="#">BBA</a></li>
-                                <li><a href="#">BCA</a></li>
+                                <li><a href="#">MBA</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown">
-                            <a href="#">Admission <i class="bi bi-chevron-down"></i></a>
-                            <ul>
-                                <li><a href="#">Admissions in MBA</a></li>
-                                <li><a href="#">Admission in MCA</a></li>
-                                <li><a href="#">Admission in BBA</a></li>
-                                <li><a href="#">Admission in BCA</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Ordinances</a></li>
+                        <li><a href="#">Academic Calendar </a></li>
+                        <li><a href="#">Evaluation Scheme </a></li>
                         <li><a href="#">Syllabus</a></li>
-                        <li><a href="#">Fee Structure</a></li>
-                        <li><a href="#">College Calendar</a></li>
-                        <li><a href="#">University Calendar</a></li>
-                        <li><a href="#">E-Learning</a></li>
-                        <li><a href="#">MoU</a></li>
-                    </ul>
-                </li>
-
-                <!-- R&D -->
-                <li class="dropdown">
-                    <a href="#"><span>Research & Development</span><i class="bi bi-chevron-down"></i></a>
-                    <ul>
-                        <li><a href="#">Research Projects</a></li>
+                        <li><a href="#">Issue of Certificate for Passout Students</a></li>
                         <li class="dropdown">
-                            <a href="#">Research<i class="bi bi-chevron-down"></i></a>
+                            <a href="#">Student Awards <i class="bi bi-chevron-down"></i></a>
                             <ul>
-                                <li><a href="#">Research Cell</a></li>
-                                <li><a href="#">Patent</a></li>
-                                <li><a href="#">Awards & Achievements</a></li>
-                                <li><a href="#">Paper Publication</a></li>
-                                <li><a href="#">National Conference</a></li>
-                                <li><a href="#">National Journal Of Engineering & Technology</a></li>
-                                <li><a href="#">National Seminar</a></li>
-                                <li><a href="#">Techyuva Model Competition</a></li>
-                                <li><a href="#">Paper Presentation</a></li>
-                                <li><a href="#">Buddha Invention Center</a></li>
-                                <li><a href="#">Incubation Cell</a></li>
-                                <li><a href="#">Buddha Museum</a></li>
+                                <li><a href="#">Academic Award</a></li>
+                                <li><a href="#">Star Award</a></li>
+                                <li><a href="#">Change of Guard Ceremony</a></li>
                             </ul>
                         </li>
-                    </ul>
-                </li>
-
-                <!-- FACILITIES -->
-                <li class="dropdown">
-                    <a href="#"><span>Facilities</span><i class="bi bi-chevron-down"></i></a>
-                    <ul>
-                        <li class="dropdown">
-                            <a href="#">Infrastructure <i class="bi bi-chevron-down"></i></a>
-                            <ul>
-                                <li><a href="#">Library</a></li>
-                                <li><a href="#">Sports</a></li>
-                                <li><a href="#">Hostel</a></li>
-                                <li><a href="#">Mess</a></li>
-                                <li><a href="#">Workshop</a></li>
-                                <li><a href="#">Classrooms</a></li>
-                                <li><a href="#">Applied Science Lab Complex</a></li>
-                                <li><a href="#">Civil Lab Complex</a></li>
-                                <li><a href="#">Computer Lab Complex</a></li>
-                                <li><a href="#">Electrical Lab Complex</a></li>
-                                <li><a href="#">ELECTRONICS & COMMUNICATION Lab Complex</a></li>
-                                <li><a href="#">Mechanical Lab Complex</a></li>
-                                <li><a href="#">Conference Hall</a></li>
-                                <li><a href="#">Seminar Hall</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#">Other Facilities <i class="bi bi-chevron-down"></i></a>
-                            <ul>
-                                <li><a href="#">Cafeteria</a></li>
-                                <li><a href="#">Guest House</a></li>
-                                <li><a href="#">Bank ATM</a></li>
-                                <li><a href="#">Transportation</a></li>
-                                <li><a href="#">Security</a></li>
-                                <li><a href="#">BIM STAGE</a></li>
-                                <li><a href="#">Euphony</a></li>
-                                <li><a href="#">T.V. Room</a></li>
-                                <li><a href="#">GYM</a></li>
-                                <li><a href="#">Buddha Bazaar</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-
-                <!-- SKILL DEV -->
-                <li class="dropdown">
-                    <a href="#"><span>Skill Development</span><i class="bi bi-chevron-down"></i></a>
-                    <ul>
-                        <li><a href="#">Buddha Skill Enhancement Programme</a></li>
-                        <li><a href="#">English Chaupal</a></li>
-                        <li><a href="#">Gyandeep Summer Training</a></li>
-                        <li><a href="#">Gate-Classes</a></li>
-                        <li><a href="#">Tech-Edge</a></li>
-                        <li><a href="#">Career Counselling</a></li>
-                        <li><a href="#">GATE Result</a></li>
+                        <li><a href="#">Achievement </a></li>
                     </ul>
                 </li>
 
@@ -362,41 +292,71 @@
                     </ul>
                 </li>
 
-                <!-- EXAMINATION -->
+                <!-- Research & Development -->
                 <li class="dropdown">
-                    <a href="#"><span>Examination</span><i class="bi bi-chevron-down"></i></a>
+                    <a href="#"><span>Research & Development</span><i class="bi bi-chevron-down"></i></a>
                     <ul>
-                        <li><a href="#">Examination Committee</a></li>
-                        <li><a href="#">Examination Notices</a></li>
-                        <li><a href="#">DigiLocker NAD</a></li>
-                        <li><a href="#">Degree/Migration</a></li>
+                        <li><a href="#">Professional Membership</a></li>
+                        <li><a href="#">College Journal</a></li>
+                        <li><a href="#">Institutes Innovation Cell (IIC)</a></li>
+                        <li><a href="#">Research Achievements</a></li>
+                        <li><a href="#">Grants</a></li>
                     </ul>
                 </li>
 
-                <!-- CAREERS -->
+                <!-- ACTIVITIES -->
                 <li class="dropdown">
-                    <a href="#"><span>Careers</span><i class="bi bi-chevron-down"></i></a>
+                    <a href="#"><span>Activities</span><i class="bi bi-chevron-down"></i></a>
+                   <ul>
+                        <li><a href="#">Buddha Sharad Mahotsav </a></li>
+                        <li><a href="#">Buddha Spring Festival </a></li>
+                        <li><a href="#">Extracurricular </a></li>
+                        <li><a href="#">Sports </a></li>
+                        <li><a href="#">Community Development (PUNYA) </a></li>
+                        <li><a href="#">Women Empowerment Cells (WEC) </a></li>
+                    </ul>
+                </li>
+
+                <!-- FACILITIES & INFRASTRUCTURE -->
+                <li class="dropdown">
+                    <a href="#"><span>Facilities</span><i class="bi bi-chevron-down"></i></a>
                     <ul>
-                        <li><a href="#">Faculty Positions</a></li>
-                        <li><a href="#">Non-Teaching Positions</a></li>
+                        <li><a href="#">Hostel</a></li>
+                        <li><a href="#">Mess</a></li>
+                        <li><a href="#">BUS</a></li>
+                        <li><a href="#">Buddha Bazar</a></li>
+                        <li><a href="#">Temple Event</a></li>
+                        <li><a href="#">ATM</a></li>
+                        <li class="dropdown">
+                            <a href="#">Infrastructure <i class="bi bi-chevron-down"></i></a>
+                             <ul>
+                                <li><a href="#">Computer Labs </a></li>
+                                <li><a href="#">Smart Class Rooms </a></li>
+                                <li><a href="#">Seminar Hall</a></li>
+                             </ul>
+                        </li>
                     </ul>
                 </li>
 
-                <li class="dropdown"><a href="#"><span>What's New</span> <i class="bi bi-chevron-down"></i></a>
-                    <ul class="w-ddl-end">
-                        <li><a href="#">News <i class="bx bx-news me-2"></i></a></li>
-                        <li><a href="#">Notice <i class="bx bx-star  me-2"></i></a></li>
-                        <li><a href="#">Videos Gallery <i class="bx bi-camera-reels-fill  me-2"></i></a></li>
-                        <li><a href="#">Photo Gallery <i class="bx bx-image  me-2"></i></a></li>
-                        <li><a href="#">Important Links <i class="bx bx-link-alt  me-2"></i></a></li>
-                        <li><a href="#">Media Coverage <i class="bx bi bi-globe  me-2"></i></a></li>
-                        <li><a href="#">Events <i class="bx bx-calendar-event  me-2"></i></a></li>
-                        <li><a href="#">Grievance Form <i class="bx bx-box    me-2"></i></a></li>
-                        <li><a href="#">Anti Ragging <i class="bx bxs-flag-checkered  me-2"></i></a></li>
+                <!-- SKILL DEV & PERSONALITY DEV -->
+                <li class="dropdown">
+                    <a href="#"><span>Skill Development</span><i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="#">Achievements</a></li>
+                        <li><a href="#">Leadcon</a></li>
+                        <li><a href="#">CCC Certification</a></li>
+                        <li><a href="#">Aptitudes & Reasoning</a></li>
+                        <li class="dropdown">
+                            <a href="#">Personality Dev. <i class="bi bi-chevron-down"></i></a>
+                            <ul>
+                                <li><a href="#">Communication SKILL ENHANCEMENT PROGRAM</a></li>
+                                <li><a href="#">English Speaking</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
 
-                <li><a class="nav-link scrollto" href="#"><i class="bx bxs-phone-call fs-3"></i></a></li>
+                <li><a class="nav-link scrollto" href="#">Contact Us</a></li>
             </ul>
         </nav>
     </div>

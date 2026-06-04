@@ -331,7 +331,7 @@
                             <td class="text-muted"><i class="bi bi-geo-alt me-1"></i> Agrawal Orthopaedic, Jubli Road, Gorakhpur</td>
                         </tr>
                         <!-- Row 3 -->
-                        <tr class="board-row-item" data-search="3 Professor of Institute Prof. Awadhesh Kumar Tiwari M.Com, Ph.D Professor Buddha Institute of Management, GIDA, Gorakhpur">
+                        <tr class="board-row-item" data-search="3 Professor of Institute Prof. Awadhesh Kumar Tiwari M.Com, Ph.D Professor Buddha Institute of Technology, GIDA, Gorakhpur">
                             <td class="fw-bold text-secondary">03</td>
                             <td><span class="role-badge badge-edu">Professor of Institute</span></td>
                             <td>
@@ -342,7 +342,7 @@
                             </td>
                             <td><span class="badge bg-light text-dark border px-2 py-1">M.Com, Ph.D</span></td>
                             <td class="fw-semibold text-secondary"><i class="bi bi-briefcase me-1"></i> Professor</td>
-                            <td class="text-muted"><i class="bi bi-geo-alt me-1"></i> Buddha Institute of Management, GIDA, Gorakhpur</td>
+                            <td class="text-muted"><i class="bi bi-geo-alt me-1"></i> Buddha Institute of Technology, GIDA, Gorakhpur</td>
                         </tr>
                         <!-- Row 4 -->
                         <tr class="board-row-item" data-search="4 Technologist / Educationist to be nominated by society Prof. R.P. Mani M.Sc. Ph.D Professor MMM University of Technology, Gorakhpur">
@@ -401,7 +401,7 @@
                             <td class="text-muted"><i class="bi bi-geo-alt me-1"></i> Radio Mantra, Gorakhpur</td>
                         </tr>
                         <!-- Row 8 -->
-                        <tr class="board-row-item" data-search="8 Assistant Professor of the Institute Mr. Rama Raman Pandey MBA, B.Com, NET Assistant Professor Buddha Institute of Management, GIDA, Gorakhpur">
+                        <tr class="board-row-item" data-search="8 Assistant Professor of the Institute Mr. Rama Raman Pandey MBA, B.Com, NET Assistant Professor Buddha Institute of Technology, GIDA, Gorakhpur">
                             <td class="fw-bold text-secondary">08</td>
                             <td><span class="role-badge badge-edu">Assistant Professor</span></td>
                             <td>
@@ -412,7 +412,7 @@
                             </td>
                             <td><span class="badge bg-light text-dark border px-2 py-1">MBA, B.Com, NET</span></td>
                             <td class="fw-semibold text-secondary"><i class="bi bi-briefcase me-1"></i> Assistant Professor</td>
-                            <td class="text-muted"><i class="bi bi-geo-alt me-1"></i> Buddha Institute of Management, GIDA, Gorakhpur</td>
+                            <td class="text-muted"><i class="bi bi-geo-alt me-1"></i> Buddha Institute of Technology, GIDA, Gorakhpur</td>
                         </tr>
                         <!-- Row 9 -->
                         <tr class="board-row-item" data-search="9 Nominee of State Govt.(Ex.officio) Prof. Ashwani Ph.D RHEO Gorakhpur Canal Road, Daudpur, Gorakhpur">
@@ -443,7 +443,7 @@
                             <td class="text-muted"><i class="bi bi-geo-alt me-1"></i> DDU GKP University, Gorakhpur</td>
                         </tr>
                         <!-- Row 11 -->
-                        <tr class="board-row-item" data-search="11 Member Secretary Dr. Abishek Kumar Tripathi M.Com, MBA, Ph.D Professor Buddha Institute of Management, GIDA, Gorakhpur">
+                        <tr class="board-row-item" data-search="11 Member Secretary Dr. Abishek Kumar Tripathi M.Com, MBA, Ph.D Professor Buddha Institute of Technology, GIDA, Gorakhpur">
                             <td class="fw-bold text-secondary">11</td>
                             <td><span class="role-badge badge-secretary">Member Secretary</span></td>
                             <td>
@@ -454,7 +454,7 @@
                             </td>
                             <td><span class="badge bg-light text-dark border px-2 py-1">M.Com, MBA, Ph.D</span></td>
                             <td class="fw-semibold text-secondary"><i class="bi bi-briefcase me-1"></i> Professor</td>
-                            <td class="text-muted"><i class="bi bi-geo-alt me-1"></i> Buddha Institute of Management, GIDA, Gorakhpur</td>
+                            <td class="text-muted"><i class="bi bi-geo-alt me-1"></i> Buddha Institute of Technology, GIDA, Gorakhpur</td>
                         </tr>
                     </tbody>
                 </table>
@@ -515,7 +515,7 @@
         </div>
 
         <!-- Card 3 -->
-        <div class="col-md-6 col-12 board-card-item" data-search="Professor of Institute Prof. Awadhesh Kumar Tiwari M.Com, Ph.D Professor Buddha Institute of Management, GIDA, Gorakhpur">
+        <div class="col-md-6 col-12 board-card-item" data-search="Professor of Institute Prof. Awadhesh Kumar Tiwari M.Com, Ph.D Professor Buddha Institute of Technology, GIDA, Gorakhpur">
             <div class="mobile-member-card">
                 <div class="d-flex align-items-center mb-3">
                     <div class="avatar-circle avatar-3">AT</div>
@@ -534,7 +534,7 @@
                 </div>
                 <div class="mobile-card-meta mb-0 align-items-start">
                     <i class="bi bi-geo-alt-fill mt-1"></i>
-                    <span><strong>Address:</strong> Buddha Institute of Management, GIDA, Gorakhpur</span>
+                    <span><strong>Address:</strong> Buddha Institute of Technology, GIDA, Gorakhpur</span>
                 </div>
             </div>
         </div>
@@ -640,7 +640,7 @@
         </div>
 
         <!-- Card 8 -->
-        <div class="col-md-6 col-12 board-card-item" data-search="Assistant Professor of the Institute Mr. Rama Raman Pandey MBA, B.Com, NET Assistant Professor Buddha Institute of Management, GIDA, Gorakhpur">
+        <div class="col-md-6 col-12 board-card-item" data-search="Assistant Professor of the Institute Mr. Rama Raman Pandey MBA, B.Com, NET Assistant Professor Buddha Institute of Technology, GIDA, Gorakhpur">
             <div class="mobile-member-card">
                 <div class="d-flex align-items-center mb-3">
                     <div class="avatar-circle avatar-8">RP</div>
@@ -659,7 +659,7 @@
                 </div>
                 <div class="mobile-card-meta mb-0 align-items-start">
                     <i class="bi bi-geo-alt-fill mt-1"></i>
-                    <span><strong>Address:</strong> Buddha Institute of Management, GIDA, Gorakhpur</span>
+                    <span><strong>Address:</strong> Buddha Institute of Technology, GIDA, Gorakhpur</span>
                 </div>
             </div>
         </div>
@@ -715,7 +715,7 @@
         </div>
 
         <!-- Card 11 -->
-        <div class="col-md-6 col-12 board-card-item" data-search="Member Secretary Dr. Abishek Kumar Tripathi M.Com, MBA, Ph.D Professor Buddha Institute of Management, GIDA, Gorakhpur">
+        <div class="col-md-6 col-12 board-card-item" data-search="Member Secretary Dr. Abishek Kumar Tripathi M.Com, MBA, Ph.D Professor Buddha Institute of Technology, GIDA, Gorakhpur">
             <div class="mobile-member-card">
                 <div class="d-flex align-items-center mb-3">
                     <div class="avatar-circle avatar-3">AT</div>
@@ -734,7 +734,7 @@
                 </div>
                 <div class="mobile-card-meta mb-0 align-items-start">
                     <i class="bi bi-geo-alt-fill mt-1"></i>
-                    <span><strong>Address:</strong> Buddha Institute of Management, GIDA, Gorakhpur</span>
+                    <span><strong>Address:</strong> Buddha Institute of Technology, GIDA, Gorakhpur</span>
                 </div>
             </div>
         </div>
