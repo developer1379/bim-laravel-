@@ -421,6 +421,10 @@
         width: 100%;
     }
 
+    #navbar>ul>li:first-child {
+        margin-right: 40px;
+    }
+
     /* Ensure nested dropdown items display vertically and not as flex rows */
     #navbar .dropdown ul {
         display: block !important;

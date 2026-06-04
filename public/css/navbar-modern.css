@@ -4,28 +4,31 @@
 
 /* Topbar */
 .modern-topbar {
-    background: #111827;
+    background: linear-gradient(120deg, #000000 0%, #000000 25%, #cc1616 25%, #cc1616 100%);
     color: rgba(255, 255, 255, 0.85);
     font-size: 0.85rem;
     font-weight: 500;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
+
 .modern-topbar a {
     color: rgba(255, 255, 255, 0.85);
     text-decoration: none;
     transition: all 0.3s ease;
 }
+
 .modern-topbar a:hover {
-    color: #ef4444;
+    color: #ffffff;
 }
 
 /* Main Header Gradient */
 #header {
-    background: linear-gradient(135deg, #a81111 0%, #cc1616 100%);
+    background: linear-gradient(120deg, #000000 0%, #000000 12%, #cc1616 12%, #cc1616 100%);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     z-index: 999;
     transition: all 0.3s ease-in-out;
 }
+
 #header.fixed-top {
     position: fixed;
     top: 0;
@@ -34,19 +37,40 @@
 }
 
 /* Navbar Links */
-.navbar { padding: 0; }
-.navbar ul { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: nowrap; }
+.navbar {
+    padding: 0;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
 .navbar a {
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 18px 12px; font-size: 13.5px; font-weight: 600; letter-spacing: 0.3px;
-    color: rgba(255, 255, 255, 0.95); text-decoration: none; transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 12px;
+    font-size: 13.5px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: rgba(255, 255, 255, 0.95);
+    text-decoration: none;
+    transition: all 0.3s ease;
     position: relative;
     white-space: nowrap;
 }
-.navbar a i { margin-left: 4px; font-size: 12px; }
+
+.navbar a i {
+    margin-left: 4px;
+    font-size: 12px;
+}
 
 /* Modern Hover Effect (Slide-up border) */
-.navbar > ul > li > a::before {
+.navbar>ul>li>a::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -58,46 +82,93 @@
     transition: all 0.3s ease;
     border-radius: 4px 4px 0 0;
 }
-.navbar > ul > li > a:hover::before, .navbar > ul > li > .active::before {
+
+.navbar>ul>li>a:hover::before,
+.navbar>ul>li>.active::before {
     width: 80%;
 }
-.navbar > ul > li > a:hover, .navbar > ul > li > .active {
+
+.navbar>ul>li>a:hover,
+.navbar>ul>li>.active {
     color: #ffffff;
 }
 
 /* Dropdown Menu Glassmorphism */
 .navbar .dropdown ul {
-    display: block; position: absolute; top: calc(100% + 20px); left: 0; padding: 12px 0;
-    background: #ffffff; opacity: 0; visibility: hidden;
+    display: block;
+    position: absolute;
+    top: calc(100% + 20px);
+    left: 0;
+    padding: 12px 0;
+    background: #ffffff;
+    opacity: 0;
+    visibility: hidden;
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1); border-radius: 12px; z-index: 999;
-    transform: translateY(15px); min-width: 240px; border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    z-index: 999;
+    transform: translateY(15px);
+    min-width: 240px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
-.navbar .dropdown:hover > ul { opacity: 1; top: 100%; visibility: visible; transform: translateY(0); }
-.navbar .dropdown ul li { position: relative; }
+
+.navbar .dropdown:hover>ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.navbar .dropdown ul li {
+    position: relative;
+}
+
 .navbar .dropdown ul a {
-    color: #374151; padding: 12px 24px; font-size: 14px; font-weight: 500; text-transform: none; transition: all 0.2s ease;
+    color: #374151;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: none;
+    transition: all 0.2s ease;
 }
+
 .navbar .dropdown ul a:hover {
-    background: rgba(204, 22, 22, 0.05); color: #cc1616; padding-left: 30px;
+    background: rgba(23, 59, 94, 0.05);
+    color: #173b5e;
+    padding-left: 30px;
 }
-.navbar .dropdown ul .dropdown ul { top: 0; left: 100%; margin-left: 5px; transform: translateX(15px); }
-.navbar .dropdown ul .dropdown:hover > ul { transform: translateX(0); }
-.dropdown-menu-left { left: auto !important; right: 100% !important; }
+
+.navbar .dropdown ul .dropdown ul {
+    top: 0;
+    left: 100%;
+    margin-left: 5px;
+    transform: translateX(15px);
+}
+
+.navbar .dropdown ul .dropdown:hover>ul {
+    transform: translateX(0);
+}
+
+.dropdown-menu-left {
+    left: auto !important;
+    right: 100% !important;
+}
 
 /* Middle Branding Area */
 .modern-middle-section {
     background-color: #ffffff;
-    border-bottom: 1px solid rgba(0,0,0,0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
 }
+
 .modern-brand-title {
     font-size: 1.8rem;
-    color: #cc1616;
+    color: #173b5e;
     font-weight: 800;
     letter-spacing: 0.5px;
     font-family: 'Inter', sans-serif;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
+
 .modern-brand-sub {
     font-size: 0.95rem;
     font-weight: 600;
@@ -106,20 +177,50 @@
 
 /* Mobile & Responsive Desktop Styles */
 @media (max-width: 1600px) {
-    .navbar a { padding: 16px 8px; font-size: 12px; letter-spacing: 0.1px; }
-    .navbar a i { margin-left: 3px; font-size: 11px; }
+    .navbar a {
+        padding: 16px 8px;
+        font-size: 12px;
+        letter-spacing: 0.1px;
+    }
+
+    .navbar a i {
+        margin-left: 3px;
+        font-size: 11px;
+    }
 }
+
 @media (max-width: 1300px) {
-    .navbar a { padding: 14px 6px; font-size: 11px; letter-spacing: 0px; }
-    .navbar a i { margin-left: 2px; font-size: 10px; }
+    .navbar a {
+        padding: 14px 6px;
+        font-size: 11px;
+        letter-spacing: 0px;
+    }
+
+    .navbar a i {
+        margin-left: 2px;
+        font-size: 10px;
+    }
 }
+
 @media (max-width: 1100px) {
-    .navbar a { padding: 12px 4px; font-size: 10px; }
+    .navbar a {
+        padding: 12px 4px;
+        font-size: 10px;
+    }
 }
+
 @media (max-width: 991px) {
-    #header { display: none !important; }
+    #header {
+        display: none !important;
+    }
 }
+
 @media (max-width: 375px) {
-    .mobile-brand-title { font-size: 11px !important; }
-    .mobile-brand-sub { font-size: 9px !important; }
+    .mobile-brand-title {
+        font-size: 11px !important;
+    }
+
+    .mobile-brand-sub {
+        font-size: 9px !important;
+    }
 }

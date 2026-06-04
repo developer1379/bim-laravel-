@@ -11,7 +11,7 @@
     #header {
         position: relative;
         z-index: 9999 !important;
-        background: linear-gradient(135deg, rgba(17, 24, 39, 0.95) 0%, rgba(31, 41, 55, 0.95) 40%, rgba(179, 18, 18, 0.95) 40%, rgba(204, 22, 22, 0.95) 100%);
+        background: linear-gradient(120deg, #000000ff 0%, #000000ff 12%, #cc1616 12%, #cc1616 100%);
         backdrop-filter: blur(10px);
         z-index: 999;
         transition: all 0.3s ease-in-out;
@@ -22,7 +22,7 @@
         position: fixed;
         top: 0;
         width: 100%;
-        background: linear-gradient(135deg, rgba(17, 24, 39, 0.98) 0%, rgba(31, 41, 55, 0.98) 40%, rgba(179, 18, 18, 0.98) 40%, rgba(204, 22, 22, 0.98) 100%);
+        background: linear-gradient(120deg, #000000ff 0%, #000000ff 12%, #cc1616 12%, #cc1616 100%);
         backdrop-filter: blur(10px);
         box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
     }
@@ -31,7 +31,6 @@
         padding: 0;
     }
 
-    /* Enforce single line desktop view ONLY for top-level list items */
     .navbar>ul {
         margin: 0;
         padding: 0;
@@ -41,6 +40,10 @@
         justify-content: space-between;
         width: 100%;
         text-transform: uppercase;
+    }
+
+    .navbar>ul>li:first-child {
+        margin-right: 40px;
     }
 
     /* Ensure nested dropdown items display vertically and not as flex rows */
@@ -290,7 +293,7 @@
 </style>
 <!-- Topbar Start -->
 <div class="topbar d-none d-md-block"
-    style="background: linear-gradient(120deg, rgba(28, 28, 28, 1) 0%, rgba(28, 28, 28, 1) 27%, rgba(183, 0, 0, 1) 27%, rgba(183, 0, 0, 1) 100%);">
+    style="background: linear-gradient(120deg, #0056b3 0%, #0056b3 25%, #cc1616 25%, #cc1616 100%);">
     <nav class="navbar navbar-expand-lg py-1" style="padding:0px 0px 0px 5px !important">
         <div class="container-fluid" style="padding:0px 0px !important">
             <div class="logo">
