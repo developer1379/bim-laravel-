@@ -22,3 +22,9 @@
 Homestead.json
 Homestead.yaml
 Thumbs.db
+
+# Large files - never commit these
+*.zip
+*.rar
+*.tar.gz
+*.tar
